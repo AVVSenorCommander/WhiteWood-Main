@@ -1,7 +1,5 @@
 <p align="center"> <img alt="Space Station 14" width="500" height="411" src="https://i.postimg.cc/WbLnJ73B/imag4e.png" /></p>
 
-Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
-
 Это репозиторий русскоязычного сервера на Space Station 14 - WhiteWood.
 
 ## Документация
