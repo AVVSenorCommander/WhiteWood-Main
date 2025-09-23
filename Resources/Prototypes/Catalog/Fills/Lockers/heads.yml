@@ -44,7 +44,6 @@
     - id: CaptainIDCard
     - id: CigarGoldCase
       prob: 0.25
-    - id: ClothingBeltSheathFilled
     - id: ClothingHeadsetAltCommand
 #    - id: ClothingOuterArmorCaptainCarapace # Corvax-Next-CaptainDrobe
     - id: CommsComputerCircuitboard
@@ -58,7 +57,7 @@
     - id: SpaceCash1000
     - id: WeaponDisabler
 #    - id: ClothingEyesGlassesCommand # Corvax-Next-CaptainDrobe
-    - id: HeadSkeleton # A skull to accompany your skeleton crew
+    - id: RubberStampCaptain 
       conditions:
       - !type:PlayerCountCondition
         max: 15

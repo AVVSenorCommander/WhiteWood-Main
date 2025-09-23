@@ -1,0 +1,33 @@
+- type: entity
+  name: мачете M2132
+  parent: [BaseItem, Crowbar]
+  id: MacheteMarine
+  description: Последний выпуск мачете USCM. Отлично подходит для расчистки джунглей или зарослей кустарника в отдаленных колониях. Обычно используется скаутами и следопытами, но его трудно носить с собой в обычном снаряжении.
+  components:
+  - type: Sharp
+  - type: Tag
+    tags:
+    - Machete
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Weapons/Melee/machete.rsi
+    state: icon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 30
+    soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+  - type: Item
+    size: Small
+    sprite: _WhiteWood/Objects/Weapons/Melee/machete.rsi
+    storedSprite:
+      sprite: _WhiteWood/Objects/Weapons/Melee/machete.rsi
+      state: icon
+  - type: DisarmMalus
+  - type: Clothing
+    sprite: _WhiteWood/Objects/Weapons/Melee/machete.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+    - belt
