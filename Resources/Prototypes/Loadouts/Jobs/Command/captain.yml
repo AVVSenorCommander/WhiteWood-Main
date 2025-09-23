@@ -8,6 +8,16 @@
       role: JobCaptain
       time: 72000 #20 hrs
 
+# For mantles
+- type: loadoutEffectGroup
+  id: MasterRapier
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobCaptain
+      time: 252000 #20 hrs
+
 # Jumpsuit
 - type: loadout
   id: CaptainJumpsuit
@@ -59,10 +69,10 @@
   - !type:GroupLoadoutEffect
     proto: MasterCap
 
-- type: startingGear
-  id: CaptainMantle
+- type: loadout
+  id: CaptainWide
   equipment:
-    neck: ClothingNeckMantleCap
+    neck: ClothingNeckCaptainWide
 
 # Back
 - type: loadout
@@ -80,6 +90,20 @@
   equipment:
     back: ClothingBackpackDuffelCaptain
 
+# Belt
+- type: loadout
+  id: SaberSheath
+  equipment:
+    belt: ClothingBeltSheathFilled
+
+- type: loadout
+  id: RapierSheath
+  equipment:
+    belt: RapierBeltSheathFilled
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterRapier
+
 # Outer clothing
 - type: loadout
   id: CaptainOuterClothing
@@ -87,6 +111,23 @@
     outerClothing: ClothingOuterArmorCaptainCarapace
 
 - type: loadout
+  id: CaptainOuterCoat
+  equipment:
+    outerClothing: ClothingOuterCoatCaptain
+
+- type: loadout
   id: CaptainWintercoat
   equipment:
     outerClothing: ClothingOuterWinterCap
+
+# Shoes
+
+- type: loadout
+  id: OldАrmy
+  equipment:
+    shoes: ClothingShoesBootsOldАrmy
+
+- type: loadout
+  id: Laceup
+  equipment:
+    shoes: ClothingShoesBootsLaceup

@@ -154,7 +154,7 @@
 - type: entity
   id: BoxFolderCentCom
   name: CentComm folder
-  parent: BoxFolderBase
+  parent: [BoxFolderBase, BaseCentcommContraband]
   categories: [ DoNotMap ]
   description: CentComm's miserable little pile of secrets!
   components:

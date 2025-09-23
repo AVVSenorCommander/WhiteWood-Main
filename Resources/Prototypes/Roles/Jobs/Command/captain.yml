@@ -47,7 +47,6 @@
 - type: startingGear
   id: CaptainGear
   equipment:
-    shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesCommand
     gloves: ClothingHandsGlovesCaptain
     id: CaptainPDA
@@ -66,3 +65,5 @@
     eyes: ClothingEyesGlassesCommand
     mask: ClothingMaskGasCaptain
     neck: ClothingNeckCloakCap
+    shoes: ClothingShoesBootsOldАrmy
+    

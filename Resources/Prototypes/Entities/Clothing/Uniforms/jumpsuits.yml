@@ -824,7 +824,7 @@
     sprite: Clothing/Uniforms/Jumpsuit/capformal.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseCentcommContraband]
   id: ClothingUniformJumpsuitCentcomFormal
   name: central command formal suit
   description: A suit for special occasions.

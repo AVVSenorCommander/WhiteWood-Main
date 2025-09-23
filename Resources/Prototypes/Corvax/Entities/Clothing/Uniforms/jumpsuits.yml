@@ -21,7 +21,7 @@
       sprite: Corvax/Clothing/Uniforms/Jumpsuit/kim.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseCentcommContraband]
   id: ClothingUniformJumpsuitCentcomOfficerBlack
   name: special operations officer uniform
   description: Special Operations Officer uniform, nothing like that. Although... If you have time to read this, it's too late...
@@ -32,7 +32,7 @@
       sprite: Corvax/Clothing/Uniforms/Jumpsuit/centcom_officer_black.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseCentcommContraband]
   id: ClothingUniformJumpsuitCentcomAdmiral
   name: admiral's uniform
   description: A uniform worn by those with the rank Admiral in the Nanotrasen Navy.
@@ -43,7 +43,7 @@
       sprite: Corvax/Clothing/Uniforms/Jumpsuit/centcom_admiral.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformJumpsuitCapTurtleneck
   name: captain's turtleneck
   description: True captain's turtleneck.

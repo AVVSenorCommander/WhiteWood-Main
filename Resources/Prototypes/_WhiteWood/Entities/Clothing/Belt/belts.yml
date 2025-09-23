@@ -1,0 +1,130 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: RMClothingBeltHolster
+  suffix: ОПЗ
+  name: тактический ремень
+  description: Ремень предназначенный для ведения боевых действий в полевых условиях.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Clothing/Belt/golden_assault_belt.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Clothing/Belt/golden_assault_belt.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - CigPack
+        - Taser
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - Ammo
+  - type: ItemMapper
+    mapLayers:
+      flashbang:
+        whitelist:
+          components:
+          - FlashOnTrigger
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
+    sprite: Clothing/Belt/belt_overlay.rsi
+  - type: Appearance
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: RMCBeltHolsterRevolver
+  suffix: ОПЗ
+  name: портупея M276
+  description: M276 входит в стандартную комплектацию. Он состоит из модульного ремня с различными зажимами. Эта версия универсальна и подходит для различных револьверов и пистолетов, а также шести небольших подсумков для быстрого заряжания. Он слегка пахнет сеном.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Clothing/Belt/holster_revolver.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Clothing/Belt/holster_revolver.rsi
+  - type: Storage
+    whitelist:
+      tags:
+        - CigPack
+        - Taser
+      components:
+        - Stunbaton
+        - FlashOnTrigger
+        - SmokeOnTrigger
+        - Flash
+        - Handcuff
+        - BallisticAmmoProvider
+        - CartridgeAmmo
+        - DoorRemote
+        - Whistle
+        - BalloonPopper
+        - Ammo
+    maxItemSize: Normal
+    grid:
+    - 0,0,6,1
+  - type: ItemSlots
+    slots:
+      item:
+        name: Holster
+        whitelist:
+          tags:
+          - Sidearm
+  - type: ItemMapper
+    mapLayers:
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+
+- type: entity
+  parent: [ClothingBeltBase, ClothingSlotBase]
+  id: RapierBeltSheath
+  name: рапирные ножны
+  description: Богато украшенные ножны, предназначенные для хранения офицерского клинка.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Clothing/Belt/sheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _WhiteWood/Clothing/Belt/sheath.rsi
+  - type: Item
+    size: Ginormous
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sabre
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - Rapier
+  - type: ItemMapper
+    mapLayers:
+      sheath-sabre:
+        whitelist:
+          tags:
+          - Rapier
+  - type: Appearance
+
+- type: Tag
+  id: Rapier
+
+- type: entity
+  id: RapierBeltSheathFilled
+  suffix: Заполненный
+  parent: RapierBeltSheath
+  components:
+  - type: ItemSlots
+    slots:
+      item:
+        startingItem: Rapier
