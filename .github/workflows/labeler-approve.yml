@@ -9,10 +9,10 @@ jobs:
     permissions:
       pull-requests: write
     if: github.event.review.state == 'approved'
-    runs-on: [self-hosted]
+    runs-on: [ubuntu-latest]
     steps:
     - uses: actions-ecosystem/action-remove-labels@v1
       with:
         labels: |
-          Status: Needs Review
-          Status: Awaiting Changes
+          S: Needs Review
+          S: Awaiting Changes
