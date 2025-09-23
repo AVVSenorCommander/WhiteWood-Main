@@ -1,6 +1,6 @@
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: [ClothingUniformSkirtBase, BaseCentcommContraband]
   id: ClothingUniformJumpskirtCentcomOfficial
   name: CentCom officer's suitskirt
   description: It's a suitskirt worn by CentCom's highest-tier Commanders.
@@ -11,7 +11,7 @@
       sprite: Corvax/Clothing/Uniforms/Jumpskirt/centcom_official.rsi
 
 - type: entity
-  parent: ClothingUniformSkirtBase
+  parent: [ClothingUniformSkirtBase, BaseCentcommContraband]
   id: ClothingUniformJumpskirtCentcomOfficer
   name: CentCom turtleneck skirt
   description: A skirt version of the CentCom turtleneck, rarer and more sought after than the original.
@@ -44,7 +44,7 @@
     sprite: Corvax/Clothing/Uniforms/Jumpskirt/schoolskirt.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseCommandContraband]
   id: ClothingUniformJumpskirtCapTurtleneck
   name: captain's turtleneck
   description: True captain's turtleneck.

@@ -159,6 +159,7 @@
   loadouts:
   - CaptainCloak
   - CaptainCloakFormal
+  - CaptainWide
   - CaptainMantle
 
 - type: loadoutGroup
@@ -170,11 +171,27 @@
   - CaptainDuffel
 
 - type: loadoutGroup
+  id: CaptainBelt
+  name: Капитан, пояс
+  loadouts:
+  - SaberSheath
+  - RapierSheath
+
+- type: loadoutGroup
   id: CaptainOuterClothing
   name: loadout-group-captain-outerclothing
   loadouts:
   - CaptainOuterClothing
+  - CaptainOuterCoat
   - CaptainWintercoat
+
+- type: loadoutGroup
+  id: CaptainShoes
+  name: Капитан, обувь
+  loadouts:
+  - OldАrmy
+  - Laceup
+
 
 - type: loadoutGroup
   id: HoPHead
