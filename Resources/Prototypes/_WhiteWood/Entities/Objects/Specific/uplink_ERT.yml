@@ -1,0 +1,76 @@
+- type: entity
+  id: StorePresetUplinkERT
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    currencyWhitelist:
+    - Productunit
+
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkERT]
+  id: BaseUplink
+  name: Блюспейс магазин
+  description: Блюспейс магазин отряда быстрого реагирования.
+  suffix: 35 ЕТ
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 35
+
+- type: entity
+  name: Единица технологии
+  parent: BaseItem
+  id: Productunit
+  suffix: 20 PU
+  description: It seems to be pulsing with suspiciously enticing energies.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/tradeunit.rsi
+    state: tradeunit
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/tradeunit.rsi
+    size: Tiny
+  - type: Stack
+    count: 20
+    stackType: Productunit
+  - type: StackPrice
+    price: 200
+  - type: Currency
+    price:
+      Productunit: 1
+
+- type: currency
+  id: Productunit
+  displayName: store-currency-display-tradeunit
+  cash:
+    1: Productunit1
+  canWithdraw: true
+
+- type: stack
+  id: Productunit
+  name: Product unit
+  icon: _WhiteWood/Objects/Specific/tradeunit.rsi
+  spawn: Productunit1
+
+- type: entity
+  parent: Productunit
+  id: Productunit1
+  suffix: 1 PU
+  components:
+  - type: Stack
+    count: 1
