@@ -1,19 +1,23 @@
 - type: entity
-  id: StorePresetUplinkERT
+  id: StorePresetUplinkERTSecurity 
   abstract: true
   components:
   - type: Store
     name: store-preset-name-uplink
     categories:
+    - UplinkERTWeapon
+    - UplinkERTAmmo
+    - UplinkERTMed 
+    - UplinkERTMisc
     currencyWhitelist:
     - Productunit
 
 - type: entity
-  parent: [BaseItem,  StorePresetUplinkERT]
+  parent: [BaseItem,  StorePresetUplinkERTSecurity]
   id: BaseUplink
   name: Блюспейс магазин
   description: Блюспейс магазин отряда быстрого реагирования.
-  suffix: 35 ЕТ
+  suffix: 40 ЕТ СБ
   components:
   - type: Sprite
     sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
@@ -30,7 +34,7 @@
     key: enum.StoreUiKey.Key
   - type: Store
     balance:
-      Productunit: 35
+      Productunit: 40
 
 - type: entity
   name: Единица технологии
@@ -56,7 +60,7 @@
 
 - type: currency
   id: Productunit
-  displayName: store-currency-display-tradeunit
+  displayName: Единица технологии
   cash:
     1: Productunit1
   canWithdraw: true
@@ -74,3 +78,49 @@
   components:
   - type: Stack
     count: 1
+
+
+- type: storeCategory
+  id: UplinkERTWeapon
+  name: Оружие
+  priority: 1
+
+- type: storeCategory
+  id: UplinkERTMisc
+  name: Разное
+  priority: 4
+
+- type: storeCategory
+  id: UplinkERTAmmo
+  name: Аммуниция
+  priority: 2
+
+- type: storeCategory
+  id: UplinkERTMed
+  name: Медицина 
+  priority: 3
+
+- type: storeCategory
+  id: UplinkERTmedics
+  name: Медицина +
+  priority: 4
+
+- type: storeCategory
+  id: UplinkERTArmorSecurity 
+  name: Броня
+  priority: 4  
+
+- type: storeCategory
+  id: UplinkERTArmorMedic
+  name: Броня
+  priority: 4    
+
+- type: storeCategory
+  id: UplinkERTArmorJanitor
+  name: Броня
+  priority: 4  
+
+- type: storeCategory
+  id: UplinkERTArmorengineer
+  name: Броня
+  priority: 4    
