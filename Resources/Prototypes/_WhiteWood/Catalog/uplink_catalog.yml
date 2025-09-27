@@ -3,7 +3,7 @@
   name: М-90
   description: Карабин старой модели, выполненный по схеме булл-пап, с подствольным гранатомётом. Использует патроны калибра .20 винтовочный.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/carbine.rsi, state: base }
-  productEntity: WeaponRifleM90GrenadeLauncher
+  productEntity: ClothingBackpackDuffelMilitaryFilledM90GrenadeLauncher
   cost:
     Productunit: 15
   categories:
@@ -14,7 +14,7 @@
   name: Лектер
   description: Первоклассная армейская штурмовая винтовка. Использует патроны калибра .20 винтовочный.
   icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/lecter.rsi, state: icon }
-  productEntity: WeaponRifleLecter
+  productEntity: ClothingBackpackDuffelMilitaryFilledLecter
   cost:
     Productunit: 10
   categories:
@@ -57,7 +57,7 @@
   name: Дрозд
   description: Превосходный полностью автоматический тяжёлый пистолет-пулемёт. Использует патроны калибра .35 авто.
   icon: { sprite: Objects/Weapons/Guns/SMGs/drozd.rsi, state: base }
-  productEntity: WeaponSubMachineGunDrozd
+  productEntity: ClothingBackpackDuffelMilitaryFilledMachineGun
   cost:
     Productunit: 8
   categories:
@@ -219,25 +219,27 @@
     Productunit: 1
   categories:
   - UplinkERTmedics
-  #ammo
+  #ammo 
 
 - type: listing
   id: DrozdAmmo
-  name: Магазин 35.авто
-  description: Магазин для пистолета-пулемёта Дрозд
-  productEntity: MagazinePistolSubMachineGun
+  name: Набор магазин "35.авто"
+  description: 5 Магазинов для пистолета-пулемёта Дрозд
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazins.rsi, state: red-icon }
+  productEntity: ClothingBackpackDuffelMilitaryFilledMachine
   cost:
-    Productunit: 1
+    Productunit: 4
   categories:
   - UplinkERTAmmo
 
 - type: listing
   id: LecterAmmo
-  name: Магазин 20.винтовочный
-  description: Магазин для Лектера и М-90
-  productEntity: MagazineRifle
+  name: Набор магазинов "20.винтовочный"
+  description: 5 Магазинов для Лектера и М-90
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazin.rsi, state: red-icon }
+  productEntity: ClothingBackpackDuffelMilitaryFilledAMMO
   cost:
-    Productunit: 1
+    Productunit: 6
   categories:
   - UplinkERTAmmo
 
@@ -336,6 +338,29 @@
     Productunit: 10
   categories:
   - UplinkERTArmorMedic
+
+#Janitor 
+
+- type: listing
+  id: Gidra
+  name: Набор "Гидра"
+  description: гранатомёт и 10 запасных зарядов для уборки! Отличный подход к уборке это "БАХ, БАХ, ГРЯЗЬ! ОУ ЩИТ, ААХХ, МИКРОБЫ СДОХЛИ!!!".
+  icon: { sprite: Objects/Weapons/Guns/Launchers/hydra_launcher.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelMilitaryFilledGidra
+  cost:
+    Productunit: 5
+  categories:
+  - Janitor
+
+- type: listing
+  id: Gidras
+  name: чистящая граната
+  description: пшшшшш...
+  productEntity: CleanerGrenade
+  cost:
+    Productunit: 1
+  categories:
+  - Janitor
 
 #armor engineer
 

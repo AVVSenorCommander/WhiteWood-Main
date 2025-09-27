@@ -71,6 +71,7 @@
     - UplinkERTMed
     - UplinkERTMisc
     - UplinkERTArmorJanitor
+    - Janitor
     currencyWhitelist:
     - Productunit       
 
@@ -241,7 +242,7 @@
 
 - type: storeCategory
   id: UplinkERTWeapon
-  name: Оружие
+  name: Вооружение
   priority: 1
 
 - type: storeCategory
@@ -288,3 +289,8 @@
   id: UplinkERTArmorLider
   name: Броня
   priority: 5 
+
+- type: storeCategory
+  id: Janitor
+  name: Уборка
+  priority: 5   
