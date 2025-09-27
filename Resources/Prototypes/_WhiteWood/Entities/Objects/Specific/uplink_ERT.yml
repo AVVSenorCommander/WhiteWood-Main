@@ -9,13 +9,99 @@
     - UplinkERTAmmo
     - UplinkERTMed 
     - UplinkERTMisc
+    - UplinkERTArmorSecurity
     currencyWhitelist:
     - Productunit
 
 - type: entity
+  id: StorePresetUplinkERTMed
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkERTWeapon
+    - UplinkERTAmmo
+    - UplinkERTMed 
+    - UplinkERTmedics 
+    - UplinkERTMisc
+    - UplinkERTArmorMedic
+    currencyWhitelist:
+    - Productunit    
+
+- type: entity
+  id: StorePresetUplinkERTLider
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkERTWeapon
+    - UplinkERTAmmo
+    - UplinkERTMed
+    - UplinkERTMisc
+    - UplinkERTArmorLider
+    currencyWhitelist:
+    - Productunit    
+
+- type: entity
+  id: StorePresetUplinkERTEngineer
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkERTWeapon
+    - UplinkERTAmmo
+    - UplinkERTMed
+    - UplinkERTMisc
+    - UplinkERTArmorengineer
+    currencyWhitelist:
+    - Productunit        
+
+- type: entity
+  id: StorePresetUplinkERTJanitor
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkERTWeapon
+    - UplinkERTAmmo
+    - UplinkERTMed
+    - UplinkERTMisc
+    - UplinkERTArmorJanitor
+    currencyWhitelist:
+    - Productunit       
+
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkERTLider]
+  id: BaseUplinkLider
+  name: Блюспейс магазин Лидера обр
+  description: Блюспейс магазин отряда быстрого реагирования. На задней крышке выцарапано "commander7807"
+  suffix: 45 ЕТ Лидер
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 45
+
+- type: entity
   parent: [BaseItem,  StorePresetUplinkERTSecurity]
-  id: BaseUplink
-  name: Блюспейс магазин
+  id: BaseUplinkSecurity
+  name: Блюспейс магазин сотрудника безопасности обр 
   description: Блюспейс магазин отряда быстрого реагирования.
   suffix: 40 ЕТ СБ
   components:
@@ -35,6 +121,79 @@
   - type: Store
     balance:
       Productunit: 40
+
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkERTEngineer]
+  id: BaseUplinkEngineer
+  name: Блюспейс магазин Инженера обр
+  description: Блюспейс магазин отряда быстрого реагирования.
+  suffix: 40 ЕТ Инженер
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 40
+
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkERTJanitor]
+  id: BaseUplinkJanitor
+  name: Блюспейс магазин уборщика обр
+  description: Блюспейс магазин отряда быстрого реагирования.
+  suffix: 40 ЕТ уборщик
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/ert_uplink.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 40
+
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkERTMed]
+  id: BaseUplinkMed
+  name: Блюспейс магазин медика
+  description: Блюспейс магазин медика. На задней крышке выцарапано "ROMEL"
+  suffix: 40 ЕТ СБ
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/ert_uplinkMed.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/ert_uplinkMed.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 40
+
 
 - type: entity
   name: Единица технологии
@@ -60,7 +219,7 @@
 
 - type: currency
   id: Productunit
-  displayName: Единица технологии
+  displayName: ET
   cash:
     1: Productunit1
   canWithdraw: true
@@ -88,7 +247,7 @@
 - type: storeCategory
   id: UplinkERTMisc
   name: Разное
-  priority: 4
+  priority: 8
 
 - type: storeCategory
   id: UplinkERTAmmo
@@ -108,19 +267,24 @@
 - type: storeCategory
   id: UplinkERTArmorSecurity 
   name: Броня
-  priority: 4  
+  priority: 5  
 
 - type: storeCategory
   id: UplinkERTArmorMedic
   name: Броня
-  priority: 4    
+  priority: 5   
 
 - type: storeCategory
   id: UplinkERTArmorJanitor
   name: Броня
-  priority: 4  
+  priority: 5 
 
 - type: storeCategory
   id: UplinkERTArmorengineer
   name: Броня
-  priority: 4    
+  priority: 5   
+
+- type: storeCategory
+  id: UplinkERTArmorLider
+  name: Броня
+  priority: 5 
