@@ -13,7 +13,7 @@ jobs:
     if: github.actor != 'IanComradeBot' && github.event.pull_request.draft == false
     strategy:
       matrix:
-        os: [self-hosted]
+        os: [ubuntu-latest]
 
     runs-on: ${{ matrix.os }}
 
