@@ -1,0 +1,53 @@
+- type: gameMap
+  id: Zone_02
+  mapName: 'Zone-02' 
+  mapPath: Maps/SCP Foundation/zone_02.yml
+  minPlayers: 0
+  stations:
+    Сomplex:
+      stationProto: StandardSCPStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'Зона-02'
+        - type: StationBiome
+          biome: Grasslands
+        - type: StationJobs
+          availableJobs:
+            #Мобильная Оперативная Группа
+            SCPMTFCommander: [ 1, 1 ]
+            SCPMTFLieutenant: [ 1, 1 ]
+            SCPMTFSergeant: [ 1, 1 ]
+            SCPMTFMedic: [ 1, 1 ]
+            SCPMTFEngineer: [ 1, 1 ]
+            SCPMTFOperative: [ 7, 7 ]
+            #Охрана Комплекса
+            SCPHOS: [ 1, 1 ]
+            SCPWarden: [ 1, 1 ]
+            SCPSecuritySergeant: [ 1, 1 ]
+            SCPSecurity: [ 3, 3 ]
+            #Персонал Комплекса
+            SCPManager: [ 1, 1 ]
+            SCPHead_of_the_zone: [ 1, 1 ]
+            SCPEngineer: [ 1, 1 ]
+            SCPSenior_scientist: [ 1, 1 ]
+            SCPScientist: [ 2, 2 ]
+            SCPJanitor: [ 3, 3 ]
+            #Неизвестная Группировка
+            SCPNGCommander: [ 1, 1 ]
+            SCPNGLieutenant: [ 1, 1 ]
+            SCPNGSergeant: [ 1, 1 ]
+            SCPNGMedic: [ 1, 1 ]
+            SCPNGEngineer: [ 1, 1 ]
+            SCPNGOperative: [ 7, 7 ]
+
+- type: entity
+  id: StandardSCPStation
+  abstract: true
+  parent:
+    - BaseStation
+    - BaseStationRecords
+    - BaseStationJobsSpawning
+    - BaseStationAlertLevels
+  noSpawn: true
+  components:
+    - type: Transform

@@ -1,0 +1,39 @@
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: ClothingHeadHelmetSentrySCP
+  name: шлем
+  suffix: SCP
+  description: Он обеспечивает умеренную защиту от большинства форм атак и выдаётся всем офицерам безопасности.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/sentry_guards.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/sentry_guards.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: ClothingHeadHelmetMTFSCP
+  name: штурмовой шлем
+  suffix: SCP, МОГ
+  description: Он обеспечивает умеренную защиту от большинства форм атак, используемых бойцами МОГ Фонда SCP. Обезопасить! Удержать! Сохранить!
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/mtf_guards.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/mtf_guards.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetBase
+  id: ClothingHeadHelmetChaos
+  name: штурмовой шлем
+  suffix: SCP, ПХ
+  description: Он обеспечивает умеренную защиту от большинства форм атак, используемых бойцами Повстанцев Хаоса. За всё плохое, против всего хорошего!
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/chaos.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/chaos.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - SecurityHelmet

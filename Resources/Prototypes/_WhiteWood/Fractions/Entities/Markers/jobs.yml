@@ -1,0 +1,312 @@
+
+- type: entity
+  id: SCPSpawnPointJobBase
+  parent: MarkerBase
+  abstract: true
+  suffix: Job Spawn
+  components:
+  - type: SpawnPoint
+    spawn_type: Job
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Markers/jobs.rsi
+
+# Мобильная Оперативная Группа
+- type: entity
+  id: SpawnPointSCPMTFCommander
+  parent: SCPSpawnPointJobBase
+  name: Командир МОГ
+  suffix: Job Spawn, SCP, МОГ
+  components:
+  - type: SpawnPoint
+    job_id: SCPMTFCommander
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MTF_Commander
+
+
+- type: entity
+  id: SpawnPointSCPMTFLieutenant
+  parent: SCPSpawnPointJobBase
+  name: Лейтенант МОГ
+  suffix: Job Spawn, SCP, МОГ
+  components:
+  - type: SpawnPoint
+    job_id: SCPMTFLieutenant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MTF_Lieutenant
+
+
+- type: entity
+  id: SpawnPointSCPMTFSergeant
+  parent: SCPSpawnPointJobBase
+  name: Сержант МОГ
+  suffix: Job Spawn, SCP, МОГ
+  components:
+  - type: SpawnPoint
+    job_id: SCPMTFSergeant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MTF_Specialist
+
+
+- type: entity
+  id: SpawnPointSCPMTFMedic
+  parent: SCPSpawnPointJobBase
+  name: Медик МОГ
+  suffix: Job Spawn, SCP, МОГ
+  components:
+  - type: SpawnPoint
+    job_id: SCPMTFMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MTF_Medic
+
+
+- type: entity
+  id: SpawnPointSCPMTFEngineer
+  parent: SCPSpawnPointJobBase
+  name: Инженер МОГ
+  suffix: Job Spawn, SCP, МОГ
+  components:
+  - type: SpawnPoint
+    job_id: SCPMTFEngineer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MTF_Engineer
+
+
+- type: entity
+  id: SpawnPointSCPMTFOperative
+  parent: SCPSpawnPointJobBase
+  name: Оперативник МОГ
+  suffix: Job Spawn, SCP, МОГ
+  components:
+  - type: SpawnPoint
+    job_id: SCPMTFOperative
+  - type: Sprite
+    layers:
+      - state: green
+      - state: MTF_Operative
+
+# Повстанцы Хаоса
+- type: entity
+  id: SpawnPointSCPNGCommander
+  parent: SCPSpawnPointJobBase
+  name: Командир ПХ
+  suffix: Job Spawn, SCP, ПХ
+  components:
+  - type: SpawnPoint
+    job_id: SCPNGCommander
+  - type: Sprite
+    layers:
+      - state: green
+      - state: NG_Commander
+
+
+- type: entity
+  id: SpawnPointSCPNGLieutenant
+  parent: SCPSpawnPointJobBase
+  name: Лейтенант ПХ
+  suffix: Job Spawn, SCP, ПХ
+  components:
+  - type: SpawnPoint
+    job_id: SCPNGLieutenant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: NG_Lieutenant
+
+
+- type: entity
+  id: SpawnPointSCPNGSergeant
+  parent: SCPSpawnPointJobBase
+  name: Сержант ПХ
+  suffix: Job Spawn, SCP, ПХ
+  components:
+  - type: SpawnPoint
+    job_id: SCPNGSergeant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: NG_Specialist
+
+
+- type: entity
+  id: SpawnPointSCPNGMedic
+  parent: SCPSpawnPointJobBase
+  name: Полевой врач ПХ
+  suffix: Job Spawn, SCP, ПХ
+  components:
+  - type: SpawnPoint
+    job_id: SCPNGMedic
+  - type: Sprite
+    layers:
+      - state: green
+      - state: NG_Medic
+
+
+- type: entity
+  id: SpawnPointSCPNGEngineer
+  parent: SCPSpawnPointJobBase
+  name: Полевой техник ПХ
+  suffix: Job Spawn, SCP, ПХ
+  components:
+  - type: SpawnPoint
+    job_id: SCPNGEngineer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: NG_Engineer
+
+
+- type: entity
+  id: SpawnPointSCPNGOperative
+  parent: SCPSpawnPointJobBase
+  name: Стрелок ПХ
+  suffix: Job Spawn, SCP, ПХ
+  components:
+  - type: SpawnPoint
+    job_id: SCPNGOperative
+  - type: Sprite
+    layers:
+      - state: green
+      - state: NG_Operative
+
+#Персонал
+- type: entity
+  id: SpawnPointSCPManager
+  parent: SCPSpawnPointJobBase
+  name: Менеджер Комплекса SCP
+  suffix: Job Spawn, SCP, Персонал
+  components:
+  - type: SpawnPoint
+    job_id: SCPManager
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Manager
+
+- type: entity
+  id: SpawnPointSCPHead_of_the_zone
+  parent: SCPSpawnPointJobBase
+  name: Менеджер Зон SCP
+  suffix: Job Spawn, SCP, Персонал
+  components:
+  - type: SpawnPoint
+    job_id: SCPHead_of_the_zone
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Head_of_the_zone
+
+- type: entity
+  id: SpawnPointSCPEngineer
+  parent: SCPSpawnPointJobBase
+  name: Инженер Камер Содержания SCP
+  suffix: Job Spawn, SCP, Персонал
+  components:
+  - type: SpawnPoint
+    job_id: SCPEngineer
+  - type: Sprite
+    layers:
+      - state: green
+      - state: ShipsEngineer
+
+- type: entity
+  id: SpawnPointSCPSenior_scientist
+  parent: SCPSpawnPointJobBase
+  name: Старший научный сотрудник SCP
+  suffix: Job Spawn, SCP, Персонал
+  components:
+  - type: SpawnPoint
+    job_id: SCPSenior_scientist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Senior_scientist
+
+- type: entity
+  id: SpawnPointSCPScientist
+  parent: SCPSpawnPointJobBase
+  name: Научный сотрудник SCP
+  suffix: Job Spawn, SCP, Персонал
+  components:
+  - type: SpawnPoint
+    job_id: SCPScientist
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Scientist
+
+- type: entity
+  id: SpawnPointSCPJanitor
+  parent: SCPSpawnPointJobBase
+  name: Уборщик Класс-J SCP
+  suffix: Job Spawn, SCP, Персонал
+  components:
+  - type: SpawnPoint
+    job_id: SCPJanitor
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Janitor
+
+# Охрана
+
+- type: entity
+  id: SpawnPointSCPHOS
+  parent: SCPSpawnPointJobBase
+  suffix: Job Spawn, SCP, Охрана
+  name: Начальник охраны комплекса SCP
+  components:
+  - type: SpawnPoint
+    job_id: SCPHOS
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Security_HOS
+
+- type: entity
+  id: SpawnPointSCPWarden
+  parent: SCPSpawnPointJobBase
+  suffix: Job Spawn, SCP, Охрана
+  name: Надзиратель SCP
+  components:
+  - type: SpawnPoint
+    job_id: SCPWarden
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Warden
+
+- type: entity
+  id: SpawnPointSCPSecuritySergeant
+  parent: SCPSpawnPointJobBase
+  name: Сержант охраны комплекса SCP
+  suffix: Job Spawn, SCP, Охрана
+  components:
+  - type: SpawnPoint
+    job_id: SCPSecuritySergeant
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Security_Sergeant
+
+- type: entity
+  id: SpawnPointSCPSecurity
+  suffix: Job Spawn, SCP, Охрана
+  parent: SCPSpawnPointJobBase
+  name: Часовой охраны комплекса SCP
+  components:
+  - type: SpawnPoint
+    job_id: SCPSecurity
+  - type: Sprite
+    layers:
+      - state: green
+      - state: Security

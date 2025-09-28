@@ -1,0 +1,29 @@
+- type: job
+  id: StaffOfficer
+  name: Штаб офицер
+  description: Связывать воедино весь корабль и подразделение, быть объектом ненависти, информировать капитана когда "Альфа" сделала кабум.
+  playTimeTracker: JobStaffOfficer
+  startingGear: StaffOfficerGear
+  icon: "JobIconStaffOfficer"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: StaffOfficerGear
+  equipment:
+    head: ClothingHeadCapOfficerWhite
+    outerClothing: CMCoatSeniorOfficerWhite
+    gloves: ClothingHandsField
+    jumpsuit: UGEJumpsuitOfficerWhite
+    eyes: ClothingEyesGlassesRPG
+    id: StaffOfficerIDCard
+    mask: CMMaskGasFieldСommander
+    ears: ClothingHeadsetAltCommand
+    back: ClothingBackpackSatchelLeather
+    belt: ClothingBeltGermanОfficerHolsterGreen
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDrop
+    pocket2: RMCPouchСommand

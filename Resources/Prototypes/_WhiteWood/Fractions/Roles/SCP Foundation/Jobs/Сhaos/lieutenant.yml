@@ -1,0 +1,48 @@
+- type: job
+  id: SCPNGLieutenant
+  name: Лейтенант ПХ
+  description: Является “правой” рукой Командира Повстанцев Хаоса.
+  playTimeTracker: JobSCPNGLieutenant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPNGLieutenant
+      time: 36000
+  startingGear: ChaosLieutenantGear
+  icon: "JobIconSCPNGLieutenant"
+  supervisors: Командиру ПХ
+  canBeAntag: false
+  access:
+  - SCPNGLieutenant
+  - SCPNGMedic
+  - SCPNGEngineer
+  - SCPNGOperative
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - SCPWarden
+  - SCPSecuritySergeant
+  - SCPSecurity
+  - Command
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: ChaosLieutenantGear
+  equipment:
+    head: ClothingHeadBereOfficer
+    gloves: ClothingHandsField
+    jumpsuit: ClothingUniformJumpsuitСhaosSCP
+    eyes: ClothingEyesGlassesRPG
+    id: SCPIDTokenChaosNG_Lieutenant
+    ears: ClothingHeadsetChaos
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDrop
+    pocket2: RMCPouchСommand

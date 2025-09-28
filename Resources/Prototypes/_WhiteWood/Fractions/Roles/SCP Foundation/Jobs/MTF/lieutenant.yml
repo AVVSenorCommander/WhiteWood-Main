@@ -1,0 +1,40 @@
+- type: job
+  id: SCPMTFLieutenant
+  name: Лейтенант МОГ
+  description: Является “правой” рукой Командира Мобильной Оперативной Группы.
+  playTimeTracker: JobSCPMTFLieutenant
+  startingGear: SCPMTFLieutenantGear
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPMTFLieutenant
+      time: 36000
+  icon: "JobIconSCPMTFLieutenant"
+  supervisors: Командиру МОГ
+  canBeAntag: false
+  access:
+  - SCPMTFLieutenant
+  - SCPMTFOperative
+  - Command
+  - HeadOfSecurity
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  accessGroups:
+  - SCPFoundationStaff
+  - SCPFoundationSecurity
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPMTFLieutenantGear
+  equipment:
+    head: ClothingHeadCapFieldCommander
+    gloves: ClothingHandsField
+    jumpsuit: ClothingUniformJumpsuitMTFSCP
+    eyes: ClothingEyesGlassesRPG
+    ears: ClothingHeadsetMTFCommander
+    id: SCPIDCardMTF_Lieutenant
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDrop
+    pocket2: RMCPouchСommand

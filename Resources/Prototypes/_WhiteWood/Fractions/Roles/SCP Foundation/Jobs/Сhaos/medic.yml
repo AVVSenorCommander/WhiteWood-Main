@@ -1,0 +1,41 @@
+- type: job
+  id: SCPNGMedic
+  name: Полевой врач ПХ
+  description: Держать отряд в боеспособном состоянии, оттаскивать трупы за баррикады, закидываться эфедрином и догонять сбежавшего Менеджера.
+  playTimeTracker: JobSCPNGMedic
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPNGMedic
+      time: 18000
+  startingGear: ChaosMedicGear
+  icon: "JobIconSCPNGMedic"
+  supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
+  canBeAntag: false
+  access:
+  - SCPNGMedic
+  - SCPNGOperative
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - SCPSecurity
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  - ChiefMedicalOfficer
+  - Medical
+  - Chemistry
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: ChaosMedicGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitСhaosSCP
+    id: SCPIDTokenChaosNG_Medic
+    ears: ClothingHeadsetChaos
+    pocket1: EmergencyMedipen

@@ -1,0 +1,23 @@
+- type: job
+  id: CharlieMarine
+  name: Морпех отряда "Чарли"
+  description: Следовать приказам, забывать код от ядерной боеголовки, бесславно помирать от дружественного огня
+  playTimeTracker: JobCharlieMarine
+  startingGear: CharlieMarineGear
+  icon: "JobIconCharlieMarine"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  access:
+    - Maintenance
+    - SquadCharlie
+  special:
+  - !type:AddComponentSpecial
+
+
+
+- type: startingGear
+  id: CharlieMarineGear
+  equipment:
+    jumpsuit: UGEJumpsuitMarineCharlie
+    id: CRiflemanIDCard
+    pocket1: EmergencyMedipen

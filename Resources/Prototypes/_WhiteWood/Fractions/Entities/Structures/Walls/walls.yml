@@ -1,0 +1,569 @@
+# BaseWall
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: CMBaseWall
+  suffix: CM, Неразрушимый
+  description: A huge chunk of metal used to separate rooms.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+  - type: Icon
+    state: full
+  - type: PlacementReplacement
+    key: walls
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Occluder
+  - type: Airtight
+  - type: RadiationBlocker
+    resistance: 2
+  - type: StaticPrice
+    price: 75
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 1000
+
+
+# Standart СM
+- type: entity
+  parent: CMBaseWall
+  id: CMWallMetal
+  name: стена
+  suffix: CM, Неразрушимый
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/metal.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/metal.rsi
+  - type: Tag
+    tags:
+      - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviours:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMGirder:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: metal
+
+- type: entity
+  parent: CMWallMetal
+  id: CMWallMetalAlmayer
+  name: стена
+  suffix: CM, Неразрушимый
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_black.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_black.rsi
+    state: wall
+  - type: IconSmooth
+    key: walls
+    base: wall
+
+- type: entity
+  parent: CMWallMetal
+  id: CMWallMetalAlmayerWhite
+  name: стена
+  suffix: CM, Неразрушимый
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_white.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_white.rsi
+    state: wall
+  - type: IconSmooth
+    key: walls
+    base: wall
+
+- type: entity
+  parent: CMBaseWall
+  id: CMWallMetalReinforced
+  name: стена
+  suffix: CM, Неразрушимый
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/rwall.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/rwall.rsi
+  - type: Tag
+    tags:
+      - Wall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviours:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMGirder:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: IconSmooth
+    key: walls
+    base: rwall
+  - type: StaticPrice
+    price: 150
+
+# Indestructible
+- type: entity
+  parent: CMBaseWall
+  id: CMWallReinforcedHeavy
+  suffix: CM, Неразрушимый
+  name: heavy reinforced wall
+  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/rwall.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/rwall.rsi
+  - type: Tag
+    tags:
+      - Wall
+  - type: IconSmooth
+    key: walls
+    base: rwall
+
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: CMWallReinforcedHeavyAlmayer
+  suffix: CM, Неразрушимый
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_black.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_black.rsi
+    state: hull
+  - type: IconSmooth
+    key: walls
+    base: wall
+
+- type: entity
+  parent: CMWallReinforcedHeavy
+  id: CMWallReinforcedHeavyAlmayerWhite
+  suffix: CM, Неразрушимый
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_white.rsi
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_white.rsi
+    state: hull
+  - type: IconSmooth
+    key: walls
+    base: wall
+
+# Secondary SCP Wals -----------------------------------------------------------------------------------------------------
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallPlastitanium
+  name: пластановая стена
+  suffix: SCP, Неразрушимый, Вторичный
+  description: Удерживает SCP внутри, а персонал снаружи.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/plastitanium.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/plastitanium.rsi
+    - type: IconSmooth
+      key: walls
+      base: plastitanium
+
+- type: entity
+  id: SCPWallPlastitaniumDiagonal
+  name: пластановая диагональ
+  suffix: SCP, Диагональ, Неразрушимый, Вторичный
+  description: Удерживает SCP внутри, а персонал снаружи.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wall
+    - Diagonal
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/plastitanium_diagonal.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/plastitanium_diagonal.rsi
+    state: state0
+  - type: Physics
+    bodyType: Static
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+    - South
+    - East
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallMetal
+  name: стена
+  suffix: SCP, Неразрушимый, Вторичный
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/solid.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/solid.rsi
+    - type: IconSmooth
+      key: walls
+      base: solid
+
+- type: entity
+  id: SCPWallMetalDiagonal
+  name: стена
+  suffix: SCP, Диагональ, Неразрушимый, Вторичный
+  description: Удерживает SCP внутри, а персонал снаружи.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wall
+    - Diagonal
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/solid_diagonal.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/solid_diagonal.rsi
+    state: state0
+  - type: Physics
+    bodyType: Static
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+    - South
+    - East
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallMining
+  name: стена
+  suffix: SCP, Неразрушимый, Вторичный
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/mining.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/mining.rsi
+    - type: IconSmooth
+      key: walls
+      base: mining
+
+- type: entity
+  id: SCPWallMiningDiagonal
+  name: стена
+  suffix: SCP, Диагональ, Неразрушимый, Вторичный
+  description: Удерживает SCP внутри, а персонал снаружи.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wall
+    - Diagonal
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/mining_diagonal.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/mining_diagonal.rsi
+    state: state0
+  - type: Physics
+    bodyType: Static
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+    - South
+    - East
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallСult
+  name: стена культа
+  suffix: SCP, Неразрушимый, Вторичный
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/cult.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/cult.rsi
+    - type: IconSmooth
+      key: walls
+      base: cult
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallСorrugated
+  name: стена
+  suffix: SCP, Неразрушимый, Вторичный
+  description: Огромный кусок металла, используемый для разделения комнат.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/corrugated.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/corrugated.rsi
+    - type: IconSmooth
+      key: walls
+      base: riveted
+
+- type: entity
+  id: SCPWallСorrugatedDiagonal
+  name: стена
+  suffix: SCP, Диагональ, Неразрушимый, Вторичный
+  description: Удерживает SCP внутри, а персонал снаружи.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Tag
+    tags:
+    - Wall
+    - Diagonal
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/corrugated_diagonal.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Secondary/corrugated_diagonal.rsi
+    state: state0
+  - type: Physics
+    bodyType: Static
+  - type: Airtight
+    noAirWhenFullyAirBlocked: false
+    airBlockedDirection:
+    - South
+    - East
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+# Zone SCP Wals -----------------------------------------------------------------------------------------------------
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallExitZone
+  name: стена
+  suffix: SCP, Неразрушимый, Зона
+  description: Стена улицы комплекса фонда SCP. Неужели это выход? На улицу не похоже...
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/exit_zone.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/exit_zone.rsi
+    - type: IconSmooth
+      key: walls
+      base: metal
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallOfficeZone
+  name: стена
+  suffix: SCP, Неразрушимый, Зона
+  description: Стена офисной зоны фонда SCP. Здесь обитают дикие офисные работники.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/office_zone.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/office_zone.rsi
+    - type: IconSmooth
+      key: walls
+      base: metal
+
+- type: entity
+  parent: BaseWall
+  id: WallBunkerFallout
+  name: бункерная стена
+  suffix: SCP, Неразрушимый, Зона
+  components:
+  - type: Tag
+    tags:
+      - Wall
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/bunker.rsi
+    drawdepth: Mobs
+  - type: SpriteFade
+  - type: Icon
+    sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/bunker.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: StrongMetallic
+  - type: IconSmooth
+    key: walls
+    base: bunker
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallHeavyZone
+  name: стена
+  suffix: SCP, Неразрушимый, Зона
+  description: Стена тяжелой зоны содержания фонда SCP. Тёмные помещения предрекают беславную погибель в глубинах трижды проклятого комлекса.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/heavy_zone.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/SCP Foundation/Zones/heavy_zone.rsi
+    - type: IconSmooth
+      key: walls
+      base: wall
+
+- type: entity
+  parent: BaseWall
+  id: SCPWallLightZone
+  name: стена
+  suffix: SCP, Неразрушимый, Зона
+  description: Стена легкой зоны содержания фонда SCP. Вы на самом дне или скорее днище комплеса! если вы хотели найти укромное место, то вы его определённо нашли.
+  components:
+    - type: Tag
+      tags:
+        - Wall
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_white.rsi
+    - type: Icon
+      sprite: _WhiteWood/Fractions/Structures/Walls/UGE/almayer_white.rsi
+    - type: IconSmooth
+      key: walls
+      base: wall

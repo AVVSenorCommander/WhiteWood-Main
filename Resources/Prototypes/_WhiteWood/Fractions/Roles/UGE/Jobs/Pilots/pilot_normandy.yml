@@ -1,0 +1,28 @@
+- type: job
+  id: PilotNormandy
+  name: Пилот транспортёра
+  description: Возить живых туда и не совсем живых обратно, охотиться на невидимок, быть грузчиком на полставки.
+  playTimeTracker: JobPilotNormandy
+  startingGear: PilotNOfficerGear
+  icon: "JobIconPilotOfficer"
+  supervisors: job-supervisors-staff-officer
+  canBeAntag: false
+  access:
+    - Command
+    - Pilot
+    - PilotNormandy
+    - Maintenance
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: PilotNOfficerGear
+  equipment:
+    head: ClothingHeadCapService
+    jumpsuit: UGEJumpsuitPilotOperation
+    gloves: ClothingHandsField
+    shoes: CMBootsBlack
+    eyes: ClothingEyesGlassesRPG
+    id: PilotNormandyIDCard
+    pocket1: EmergencyMedipen

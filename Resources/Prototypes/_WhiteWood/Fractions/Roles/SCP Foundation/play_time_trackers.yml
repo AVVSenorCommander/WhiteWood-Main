@@ -1,0 +1,31 @@
+# Overall play time, across all roles.
+# This tracker must exist, it is used directly by PlayTimeTrackingManager
+# Jobs
+
+# Chaos & MTF
+
+- type: playTimeTracker
+  id: MobileTaskForce
+
+- type: playTimeTracker
+  id: ChaosInsurgency
+
+- type: playTimeTracker
+  id: Commandergroop
+
+- type: playTimeTracker
+  id: MilitaryMedics
+
+- type: playTimeTracker
+  id: FieldEngineers
+
+# staff
+
+- type: playTimeTracker
+  id: FoundationSCP
+
+- type: playTimeTracker
+  id: GuardsFoundationSCP
+
+- type: playTimeTracker
+  id: ScientistsFoundationSCP

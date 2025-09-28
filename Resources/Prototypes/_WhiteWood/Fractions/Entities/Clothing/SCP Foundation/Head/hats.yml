@@ -1,0 +1,82 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatscp
+  name: Шапка невидимка
+  description: шапка представляет собой головной убор из твидовой шерсти. 
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/cup.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Helmets/cup.rsi
+  - type: ToggleClothing
+    action: ActionTogglePhaseCloak
+    disableOnUnequip: true
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      minVisibility: 0.1
+      lastVisibility: 0.1
+  - type: PowerCellDraw
+    drawRate: 1.8 # 200 seconds on the default cell
+  - type: ToggleCellDraw
+  
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCommanderMTF
+  name: Берет Командира 
+  suffix: МОГ
+  description: Темно-синий берет с офицерской кокардой. Синий цвет берета символизирует верность, стойкость и мужество - основные качества настоящего полевого командира.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/UGE/Head/Hats/berets/field_commander.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/UGE/Head/Hats/berets/field_commander.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCapOfficerSCP
+  name: офицерская фуражка
+  suffix: SCP
+  description: Кепка с козырьком. Владелец может ощутить на своей голове и плечах тяжелый груз ответственности. Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Hats/scp_oficer.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Hats/scp_oficer.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCapOfficerGeneralSCP
+  name: фуражка высокопоставленного офицера
+  suffix: SCP
+  description: Специальная фуражка высших чинов с золотой гравировкой, которая уже давно пережила не один блицкриг. Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Hats/scp_general.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Head/Hats/scp_general.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCapMTFMedic
+  name: берет военврача мобильной оперативной группы
+  suffix: SCP
+  description: Бирюзовый берет с крестом спереди. Его вид успокаивает и внушает надежду, что вас обязательно вылечат.
+  components:
+    - type: Sprite
+      sprite: Clothing/Head/Hats/beret_cmo.rsi
+    - type: Clothing
+      sprite: Clothing/Head/Hats/beret_cmo.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCapChaosMedic
+  name: берет военврача повстанцев хаоса
+  suffix: SCP
+  description: Прочный берет с эмблемой медицинской службы.
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/Head/Hats/beret_security_medic.rsi
+    - type: Clothing
+      sprite: Corvax/Clothing/Head/Hats/beret_security_medic.rsi

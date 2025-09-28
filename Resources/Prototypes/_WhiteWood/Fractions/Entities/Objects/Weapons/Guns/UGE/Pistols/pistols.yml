@@ -1,0 +1,43 @@
+- type: entity
+  name: Пистолет VP78
+  parent: BaseWeaponPistol
+  id: WeaponPistol88M4
+  suffix: Пистолет
+  description: Стандартное огнестрельное оружие. Стреляет пулями 35-го калибра, пробивающими броню, и может стрелять очередью из трех патронов.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Pistols/m77.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Pistols/m77.rsi
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+
+- type: entity
+  name: Служебный пистолет M4A3
+  parent: BaseWeaponPistol
+  id: WeaponPistolArmatM5Y3
+  suffix: Пистолет
+  description: Служебный пистолет M4A3, который когда-то был стандартным оружием морской пехоты, но недавно был заменён на боевой пистолет 88 M4. Использует автоматические патроны 35-го калибра.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Pistols/m4a3.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Pistols/m4a3.rsi
+  - type: Gun
+    fireRate: 2.5
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mk58.ogg

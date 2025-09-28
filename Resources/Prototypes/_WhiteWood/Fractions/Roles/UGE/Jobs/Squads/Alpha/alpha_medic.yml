@@ -1,0 +1,22 @@
+- type: job
+  id: AlfaMedic
+  name: Медик отряда "Альфа"
+  description: job-description-alfamedic
+  playTimeTracker: JobAlfaMedic
+  startingGear: AlfaMedicGear
+  icon: "JobIconAlfaMedic"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  accessGroups:
+    - SquadAlphaMedic
+  special:
+  - !type:AddComponentSpecial
+
+
+
+- type: startingGear
+  id: AlfaMedicGear
+  equipment:
+    jumpsuit: UGEJumpsuitMarineAlpha
+    id: AMedicIDCard
+    pocket1: EmergencyMedipen

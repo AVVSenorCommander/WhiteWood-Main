@@ -1,0 +1,25 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsLongFightings
+  name: Нефритовое кольцо 
+  suffix: SCP
+  description: SCP-714 - выглядит как обычное кольцо из зелёного нефрита. В отличие от обычных колец, объект имеет свойство адаптироваться под размер пальца последнего человека, который до него дотронулся. SCP-714 меняет размер только для "новых" для него субъектов. Однако, это является наименее значимым свойством объекта.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/ring.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/ring.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+  - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.9
+        Caustic: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: .790
+    sprintModifier: .790

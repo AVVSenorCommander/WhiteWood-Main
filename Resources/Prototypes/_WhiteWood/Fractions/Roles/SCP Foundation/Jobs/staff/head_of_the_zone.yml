@@ -1,0 +1,62 @@
+- type: job
+  id: SCPHead_of_the_zone
+  name: Менеджер Зон
+  description: Вы – работник фонда, отвечающий за научную/исследовательскую деятельность, так или иначе, вы служите фонду и подчиняетесь тем кто выше вас по должности.
+  playTimeTracker: JobSCPHead_of_the_zone
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: SCPFoundationDirector
+      time: 36000
+  startingGear: SCPHead_of_the_zoneGear
+  icon: "JobIconSCPHead_of_the_zone"
+  supervisors: Менеджеру Комплекса
+  canBeAntag: false
+  access:
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - Command
+  - HeadOfPersonnel
+  - Bar
+  - Service
+  - Maintenance
+  - Janitor
+  - Theatre
+  - Kitchen
+  - Chapel
+  - Hydroponics
+  - External
+  - Cryogenics
+  - Chemistry
+  - Engineering
+  - Research
+  - Detective
+  - Salvage
+  - Security
+  - Brig
+  - Lawyer
+  - Cargo
+  - Atmospherics
+  - Medical
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: SCPHead_of_the_zoneGear
+  equipment:
+    head: ClothingHeadHatHopcap
+    gloves: ClothingHandsGlovesColorBlack
+    belt: BoxFolderClipboard
+    back: ClothingBackpackSatchelLeather
+    outerClothing: ClothingOuterCoatHOP
+    eyes: ClothingEyesGlassesCommand
+    jumpsuit: ClothingUniformJumpsuitHoP
+    id: SCPIDCardHead_of_the_zone
+    ears: ClothingHeadsetAltCommand
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDropFilled
+    pocket2: PouchСommandHead_of_the_zoneFilled
+    neck: ClothingNeckMantleHOP

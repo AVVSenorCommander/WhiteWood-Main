@@ -1,0 +1,44 @@
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsLongFighting
+  name: изоляционные перчатки
+  suffix: SCP
+  description:  Удлиненные перчатки повышенной прочности. Они изолированы и имеют сильную броню. Поговаривают, что во время носки могут слипнуться с кожей намертво.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/long_fighting.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/long_fighting.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesMTFSCP
+  name: боевые перчатки
+  suffix: SCP, МОГ
+  description:  Армейские перчатки, используемые бойцами МОГ Фонда SCP. Обезопасить! Удержать! Сохранить!
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/mtf_guards_black.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/mtf_guards_black.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+
+- type: entity
+  parent: ClothingHandsGlovesColorBlack
+  id: ClothingHandsGlovesChaosSCP
+  name: боевые перчатки
+  suffix: SCP, ПХ
+  description:  Армейские перчатки, используемые бойцами Повстанцев Хаоса. За всё плохое, против всего хорошего!
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/chaosgloves.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Hands/Gloves/chaosgloves.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-insulative

@@ -1,0 +1,38 @@
+- type: job
+  id: SCPSenior_scientist
+  name: Старший научный сотрудник
+  description: Вы – работник фонда, отвечающий за научную/исследовательскую деятельность, так или иначе, вы служите фонду и подчиняетесь тем кто выше вас по должности.
+  playTimeTracker: JobSCPSenior_scientist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: SCPFoundationStaff
+      time: 18000
+  startingGear: SCPSenior_scientistGear
+  icon: "JobIconSCPSenior_scientist"
+  supervisors: Менеджеру Зон
+  canBeAntag: false
+  access:
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: SCPSenior_scientistGear
+  equipment:
+    outerClothing: ClothingOuterCoatLabSeniorResearcher
+    mask: ClothingMaskWeldingGas
+    gloves: ClothingHandsGlovesColorWhite
+    head: ClothingHeadHatBeretRND
+    eyes: ClothingEyesHudCommand
+    jumpsuit: ClothingUniformJumpsuitSeniorResearcher
+    id: SCPIDCardSenior_scientist
+    back: ClothingBackpackScience
+    belt: ClothingBeltMedicalFilled
+    ears: ClothingHeadsetScience
+    pocket1: EmergencyMedipen
+    shoes: ClothingShoesBootsMagSci
+    pocket2: RMCPouchLargeDropFilled
+    neck: ClothingNeckMantleRD

@@ -1,0 +1,28 @@
+- type: job
+  id: PilotRaptor
+  name: Пилот штурмовика
+  description: Бомбить ксено.
+  playTimeTracker: JobPilotRaptor
+  startingGear: PilotOfficerGear
+  icon: "JobIconPilotOfficer"
+  supervisors: job-supervisors-staff-officer
+  canBeAntag: false
+  access:
+    - Command
+    - Pilot
+    - PilotNormandy
+    - Maintenance
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: PilotOfficerGear
+  equipment:
+    head: ClothingHeadCapService
+    jumpsuit: UGEJumpsuitPilotOperation
+    gloves: ClothingHandsField
+    shoes: CMBootsBlack
+    eyes: ClothingEyesGlassesRPG
+    id: PilotRaptorIDCard
+    pocket1: EmergencyMedipen

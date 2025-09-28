@@ -1,0 +1,42 @@
+- type: job
+  id: SCPNGSergeant
+  name: Сержант ПХ
+  description: Является младшим Командиром Повстанцев Хаоса.
+  playTimeTracker: JobSCPNGSergeant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPNGSergeant
+      time: 36000
+  startingGear: ChaosSergeantGear
+  icon: "JobIconSCPNGSpecialist"
+  supervisors: Командиру ПХ, Лейтенанту ПХ
+  canBeAntag: false
+  access:
+  - SCPNGSergeant
+  - SCPNGMedic
+  - SCPNGEngineer
+  - SCPNGOperative
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - SCPSecuritySergeant
+  - SCPSecurity
+  - Command
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: ChaosSergeantGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitСhaosSCP
+    id: SCPIDTokenChaosNG_Sergeant
+    ears: ClothingHeadsetChaos
+    pocket1: EmergencyMedipen

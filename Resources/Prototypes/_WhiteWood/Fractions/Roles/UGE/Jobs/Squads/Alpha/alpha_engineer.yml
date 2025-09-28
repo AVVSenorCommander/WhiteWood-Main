@@ -1,0 +1,23 @@
+- type: job
+  id: AlfaEngineer
+  name: Инженер отряда "Альфа"
+  description: Держаться поближе к отряду, поддерживать укреплениями морпехов. Открывать двери и шлюзы, строить оборонительные пункты.
+  playTimeTracker: JobAlfaEngineer
+  startingGear: AlfaEngineerGear
+  icon: "JobIconAlfaEngineer"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  access:
+    - SquadAlpha
+    - Maintenance
+    - Engineering
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: AlfaEngineerGear
+  equipment:
+    jumpsuit: UGEJumpsuitEngineer
+    id: AEngineerIDCard
+    pocket1: EmergencyMedipen

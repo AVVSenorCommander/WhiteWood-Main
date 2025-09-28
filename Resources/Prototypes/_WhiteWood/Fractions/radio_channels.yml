@@ -1,0 +1,23 @@
+- type: radioChannel
+  id: O4_chat_radio
+  name: Штаб О4
+  keycode: 'ш' # WW-Localization
+  frequency: 6920
+  color: "#CCCCFF"
+  longRange: true
+
+- type: radioChannel
+  id: MTF_chat_radio
+  name: МОГ
+  keycode: 'f' # WW-Localization
+  frequency: 6920
+  color: "#0756f2"
+  longRange: true
+
+- type: radioChannel
+  id: Chaos_chat_radio
+  name: Повстанцы хаоса
+  keycode: 'х' # WW-Localization
+  frequency: 6930
+  color: "#8f4a4b"
+  longRange: true

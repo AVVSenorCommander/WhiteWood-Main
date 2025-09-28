@@ -1,0 +1,34 @@
+- type: job
+  id: SCPNGOperative
+  name: Стрелок ПХ
+  description: Простой оперативник, компетенция которого – слушать приказы и исполнять их.
+  playTimeTracker: JobSCPNGOperative
+  startingGear: ChaosOperativeGear
+  icon: "JobIconSCPNGOperative"
+  supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
+  canBeAntag: false
+  access:
+  - SCPNGOperative
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - SCPSecurity
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddComponentSpecial
+
+
+
+- type: startingGear
+  id: ChaosOperativeGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitСhaosSCP
+    id: SCPIDTokenChaosNG_Operative
+    ears: ClothingHeadsetChaos
+    pocket1: EmergencyMedipen

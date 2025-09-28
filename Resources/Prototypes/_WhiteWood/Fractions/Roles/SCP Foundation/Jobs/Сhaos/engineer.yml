@@ -1,0 +1,38 @@
+- type: job
+  id: SCPNGEngineer
+  name: Полевой техник ПХ
+  description: Держаться поближе к отряду, открывать двери и шлюзы, строить оборонительные пункты.
+  playTimeTracker: JobSCPNGEngineer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPNGEngineer
+      time: 18000
+  startingGear: ChaosEngineerGear
+  icon: "JobIconSCPNGEngineer"
+  supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
+  canBeAntag: false
+  access:
+  - SCPNGEngineer
+  - SCPNGOperative
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - SCPSecurity
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: ChaosEngineerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitСhaosSCP
+    id: SCPIDTokenChaosNG_Engineer
+    ears: ClothingHeadsetChaos
+    pocket1: EmergencyMedipen

@@ -1,0 +1,83 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSentrySCP
+  name: форма охраны комплекса
+  suffix: SCP
+  description: Серая форма охраны коплекса, носитель этой формы отвечает для борьбы с конкретными угрозами или ситуациями на территории комплекса.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/sentry_guards.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/sentry_guards.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSCPDCLASS
+  name: комплект одежды класса D
+  suffix: SCP
+  description: Оранжево-белый комбинезон с надписью «Class-D».
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/d-class.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/d-class.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMTFSCP
+  name: форма мобильной оперативной группы
+  suffix: SCP, МОГ
+  description: Синяя форма мобильной оперативной группы, используемых бойцами МОГ Фонда SCP. Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/mtf_guards.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/mtf_guards.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMTFSCPAlfa
+  name: особая форма мобильной оперативной группы
+  suffix: SCP, МОГ
+  description: Алая форма мобильной оперативной группы, используемых бойцами Альфа-1. Элита из элит! Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/mtf_guards_alfa.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/mtf_guards_alfa.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMTFSCPOficer
+  name: офицерская форма
+  suffix: SCP
+  description: Униформа офицера фонда. Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/scp_oficer.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/scp_oficer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSCPGeneral
+  name: форма высокопоставленного офицера
+  suffix: SCP
+  description: Униформа высокопоставленного офицера фонда. Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/scp_general.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/scp_general.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitСhaosSCP
+  name: форма повстанцев хаоса
+  suffix: SCP, ПХ
+  description: Армейская форма, используемая бойцами Повстанцев Хаоса. За всё плохое, против всего хорошего!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/chaos.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Uniforms/Jumpsuit/chaos.rsi

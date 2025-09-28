@@ -1,0 +1,33 @@
+- type: job
+  id: SCPManager
+  name: Менеджер Комплекса
+  description: Вы – работник фонда, отвечающий за научную/исследовательскую деятельность, так или иначе, вы служите фонду и подчиняетесь тем кто выше вас по должности.
+  startingGear: SCPManagerGear
+  playTimeTracker: JobSCPManager
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: SCPFoundationDirector
+      time: 72000
+  icon: "JobIconSCPManager"
+  supervisors: Штабу O4
+  canBeAntag: false
+  special:
+  - !type:AddComponentSpecial
+  accessGroups:
+  - AllAccess
+  - SCPFoundationSecurity
+  - SCPFoundationStaff
+
+- type: startingGear
+  id: SCPManagerGear
+  equipment:
+    gloves: ClothingHandsGlovesColorBlack
+    back: ClothingBackpackSatchelLeather
+    eyes: ClothingEyesGlassesCommand
+    outerClothing: ClothingOuterCoatDetectiveDark
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    id: SCPIDCardManager
+    ears: ClothingHeadsetAltCommand
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDropFilled
+    pocket2: PouchСommandManagerFilled

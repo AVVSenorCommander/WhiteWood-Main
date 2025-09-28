@@ -1,0 +1,45 @@
+- type: job
+  id: SCPSecuritySergeant
+  name: Сержант охраны комплекса
+  description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
+  playTimeTracker: JobSecuritySergeant
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: SCPFoundationSecurity
+      time: 18000
+  startingGear: SCPSecuritySergeantGear
+  icon: "JobIconSCPSecuritySergeant"
+  supervisors: Начальнику охраны комплекса, Смотрителю охраны комплекса
+  canBeAntag: false
+  access:
+  - SCPSecuritySergeant
+  - SCPSecurity
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - Security
+  - Brig
+  - Detective
+  - Medical
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPSecuritySergeantGear
+  equipment:
+    head: ClothingHeadHelmetSentrySCP
+    outerClothing: ClothingOuterArmorSentrySCP
+    gloves: ClothingHandsGlovesMTFSCP
+    jumpsuit: ClothingUniformJumpsuitSentrySCP
+    eyes: ClothingEyesGlassesSmartBallisticSCP
+    id: SCPIDCardSecuritySergeant
+    ears: ClothingHeadsetAltSecurity
+    back: ClothingBackpackSCPMedium
+    mask: RMCMaskBalaclava
+    belt: RMCBeltHolsterBeltSECFilled
+    shoes: BootsJackbootsMTFSCP
+    pocket1: RMCBeltPouchMagazineLargeFilled
+    pocket2: RMCPouchLargeDropFilled
+    neck: ClothingNeckLieutenantRed
+    suitstorage: WeaponSubMachineGunP90

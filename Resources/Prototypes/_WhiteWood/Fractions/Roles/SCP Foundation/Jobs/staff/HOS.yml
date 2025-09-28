@@ -1,0 +1,50 @@
+- type: job
+  id: SCPHOS
+  name: Начальник охраны комплекса
+  description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
+  playTimeTracker: JobSCPHOS
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: SCPFoundationSecurity
+      time: 72000
+  startingGear: SCPHOSGear
+  icon: "JobIconSCPHSecurity"
+  supervisors: Менеджеру Комплекса
+  canBeAntag: false
+  access:
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - HeadOfSecurity
+  - Command
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - ChiefMedicalOfficer
+  - Medical
+  - Chemistry
+  accessGroups:
+  - SCPFoundationSecurity
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPHOSGear
+  equipment:
+    head: ClothingHeadHatBeretHoS
+    outerClothing: ClothingOuterCoatHoSTrench
+    gloves: ClothingHandsGlovesMTFSCP
+    jumpsuit: ClothingUniformJumpsuitHosFormal
+    eyes: ClothingEyesGlassesRPG
+    id: SCPIDCardHOS
+    ears: ClothingHeadsetAltSecurity
+    back: ClothingBackpackSCPMedium
+    suitstorage: WeaponRifleM16A4
+    mask: ClothingMaskGasSwat
+    belt: RMCBeltHolsterBeltHOSFilled
+    shoes: BootsJackbootsMTFSCP
+    pocket1: RMCBeltPouchMagazineFilled
+    pocket2: PouchСommandHOSFilled

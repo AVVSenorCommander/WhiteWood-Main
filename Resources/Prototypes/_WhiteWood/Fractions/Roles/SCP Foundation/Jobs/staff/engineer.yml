@@ -1,0 +1,37 @@
+- type: job
+  id: SCPEngineer
+  name: Инженер Камер Содержания
+  description: Вы – работник фонда, отвечающий за научную/исследовательскую деятельность, так или иначе, вы служите фонду и подчиняетесь тем кто выше вас по должности.
+  playTimeTracker: JobSCPEngineer
+  startingGear: SCPEngineerGear
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPEngineer
+      time: 18000
+  icon: "JobIconSCPEngineer"
+  supervisors: Менеджеру Зон
+  canBeAntag: false
+  access:
+  - SCPEngineer
+  - SCPScientist
+  - SCPJanitor
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: SCPEngineerGear
+  equipment:
+    mask: ClothingMaskWeldingGas
+    gloves: ClothingHandsGlovesColorYellow
+    head: ClothingHeadHatBeretEngineering
+    eyes: ClothingEyesGlassesHiddenSecurity
+    jumpsuit: ClothingUniformJumpsuitChiefEngineer
+    id: SCPIDCardEngineer
+    back: ClothingBackpackCE
+    belt: ClothingBeltUtilityEngineering
+    ears: ClothingHeadsetAltEngineering
+    pocket1: RMCPouchLargeDropFilled
+    shoes: ClothingShoesBootsMagAdv
+    pocket2: PouchСommandHead_of_the_zoneFilled
+    neck: ClothingNeckCloakCe
