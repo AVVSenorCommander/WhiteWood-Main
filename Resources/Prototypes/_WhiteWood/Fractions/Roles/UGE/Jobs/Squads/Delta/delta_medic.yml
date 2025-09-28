@@ -1,0 +1,23 @@
+- type: job
+  id: DeltaMedic
+  name: Медик отряда "Дельта"
+  description: job-description-deltamedic
+  playTimeTracker: JobDeltaMedic
+  startingGear: DeltaMedicGear
+  icon: "JobIconDeltaMedic"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  accessGroups:
+    - SquadDeltaMedic
+  special:
+  - !type:AddComponentSpecial
+
+
+
+- type: startingGear
+  id: DeltaMedicGear
+  equipment:
+    jumpsuit: UGEJumpsuitMarineDelta
+    id: DMedicIDCard
+    ears: ClothingHeadsetMarineDelta
+    pocket1: EmergencyMedipen

@@ -1,0 +1,29 @@
+- type: job
+  id: SCPMTFOperative
+  name: Оперативник МОГ
+  description: Простой оперативник, компетенция которого – слушать приказы и исполнять их.
+  playTimeTracker: JobSCPMTFOperative
+  startingGear: SCPMTFOperativeGear
+  icon: "JobIconSCPMTFOperative"
+  supervisors: Командиру МОГ, Лейтенанту МОГ, Сержанту МОГ
+  canBeAntag: false
+  access:
+  - SCPMTFOperative
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  accessGroups:
+  - SCPFoundationStaff
+  - SCPFoundationSecurity
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: SCPMTFOperativeGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMTFSCP
+    id: SCPIDCardMTF_Operative
+    ears: ClothingHeadsetMTF
+    pocket1: EmergencyMedipen

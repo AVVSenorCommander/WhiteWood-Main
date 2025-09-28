@@ -1,0 +1,101 @@
+- type: constructionGraph
+  id: BarricadeMetalGraph
+  start: start
+  graph:
+  - node: start
+    actions:
+    - !type:DeleteEntity
+    edges:
+    - to: nodeMetal
+      completed:
+      - !type:SnapToGrid
+        southRotation: false
+      steps:
+      - material: Steel
+        amount: 5
+        doAfter: 10
+
+  - node: nodeMetal
+    entity: CMBarricadeMetal
+    edges:
+    - to: start
+      completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 2
+        - !type:DeleteEntity
+      conditions:
+        - !type:EntityAnchored
+          anchored: false
+      steps:
+        - tool: Screwing
+          doAfter: 7
+    - to: nodeBurnUpgrade
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: ReinforcedGlass
+        amount: 15
+        doAfter: 7
+    - to: nodeBruteUpgrade
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: Steel
+        amount: 10
+        doAfter: 7
+    - to: nodeExplosiveUpgrade
+      completed:
+      - !type:SnapToGrid
+      steps:
+      - material: Plasteel
+        amount: 15
+        doAfter: 7
+
+  - node: nodeBurnUpgrade
+    entity: CMBarricadeBurn
+    edges:
+    - to: start
+      completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 2
+        - !type:DeleteEntity
+      conditions:
+        - !type:EntityAnchored
+          anchored: false
+      steps:
+        - tool: Screwing
+          doAfter: 6
+
+  - node: nodeBruteUpgrade
+    entity: CMBarricadeBrute
+    edges:
+    - to: start
+      completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 2
+        - !type:DeleteEntity
+      conditions:
+        - !type:EntityAnchored
+          anchored: false
+      steps:
+        - tool: Screwing
+          doAfter: 6
+
+  - node: nodeExplosiveUpgrade
+    entity: CMBarricadeExplosive
+    edges:
+    - to: start
+      completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 2
+        - !type:DeleteEntity
+      conditions:
+        - !type:EntityAnchored
+          anchored: false
+      steps:
+        - tool: Screwing
+          doAfter: 6

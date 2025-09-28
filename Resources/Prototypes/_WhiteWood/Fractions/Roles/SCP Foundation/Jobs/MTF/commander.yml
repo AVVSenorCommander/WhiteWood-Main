@@ -1,0 +1,49 @@
+- type: job
+  id: SCPMTFCommander
+  name: Командир МОГ
+  description: Является непосредственным координатором операции в объекте.
+  startingGear: SCPMTFCommanderGear
+  playTimeTracker: JobSCPMTFCommander
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPMTFCommander
+      time: 72000
+  icon: "JobIconSCPMTFCommander"
+  supervisors: Штабу O4
+  canBeAntag: false
+  access:
+  - SCPMTFCommander
+  - SCPMTFLieutenant
+  - SCPMTFSergeant
+  - SCPMTFMedic
+  - SCPMTFEngineer
+  - SCPMTFOperative
+  - Captain
+  - Command
+  - HeadOfSecurity
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  - ChiefMedicalOfficer
+  - Medical
+  - Chemistry
+  accessGroups:
+  - SCPFoundationStaff
+  - SCPFoundationSecurity
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPMTFCommanderGear
+  equipment:
+    head: ClothingHeadCapFieldCommander
+    gloves: ClothingHandsField
+    jumpsuit: ClothingUniformJumpsuitMTFSCP
+    eyes: ClothingEyesGlassesRPG
+    ears: ClothingHeadsetMTFCommander
+    id: SCPIDCardMTF_Commander
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDrop
+    pocket2: RMCPouchСommand

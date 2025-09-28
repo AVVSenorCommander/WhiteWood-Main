@@ -1,0 +1,30 @@
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterArmorHoS]
+  id: ClothingOuterArmorWardenSCP
+  name: бронированная шинель
+  suffix: SCP
+  description: Шинель, усиленная специальными сплавами для дополнительной защиты и стиля для тех, кто обладает властным характером.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Coats/warden.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Coats/warden.rsi
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+  - type: Food
+    requiresSpecialDigestion: true
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Fiber
+          Quantity: 20

@@ -1,0 +1,11 @@
+- type: startingGear
+  id: CharlieComfortableGear
+  equipment:
+    jumpsuit: ClothingComfortableUniformMarine
+    shoes: ClothingShoesComfortableBootsMarine
+    head: ClothingHeadHatCatEars
+    id: CRiflemanIDCard
+    ears: ClothingHeadsetMarineCharlie
+    outerClothing: ClothingOuterArmorMarineComfortable
+    belt: ClothingBeltSalvageWebbing
+    pocket1: EmergencyMedipen

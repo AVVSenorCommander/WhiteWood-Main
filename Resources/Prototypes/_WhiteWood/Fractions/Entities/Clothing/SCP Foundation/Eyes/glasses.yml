@@ -1,0 +1,43 @@
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: ClothingEyesGlassesSmartBallisticSCP
+  name: визор
+  suffix: SCP
+  description: Усовершенствованные баллистическиее очки, которые обеспечивают защиту и выводят информацию о класе и уровне доступа персонала.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Eyes/Glasses/ballistic_goggles.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Eyes/Glasses/ballistic_goggles.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowJobIcons
+
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: ClothingEyesGlassesSmartBallisticSCPChaos
+  name: визор
+  suffix: SCP, ПХ
+  description: Усовершенствованные баллистическиее очки, которые обеспечивают защиту и выводят информацию о класе и уровне доступа персонала.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Eyes/Glasses/Chaos_Ballistic_goggles.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Eyes/Glasses/Chaos_Ballistic_goggles.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowJobIcons

@@ -1,0 +1,29 @@
+- type: job
+  id: BravoCommander
+  name: Командир отряда "Браво"
+  description: Поддерживать сплоченность отряда, выполнять приказы командования. Вызывать припасы и орбитальные бомбардировки, когда они нужны вашему отряду.
+  playTimeTracker: JobBravoCommander
+  startingGear: BravoCommanderGear
+  icon: "JobIconBravoCommander"
+  supervisors: job-supervisors-field-commander
+  canBeAntag: false
+  access:
+    - SquadBravo
+    - SquadLeader
+    - SquadSpecialist
+    - Engineering
+    - Maintenance
+    - Command
+    - Medical
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: BravoCommanderGear
+  equipment:
+    jumpsuit: UGEJumpsuitSquadLeaderBravo
+    eyes: ClothingEyesGlassesRPG
+    id: BCommanderIDCard
+    pocket1: EmergencyMedipen
+    shoes: CMBootsBlack

@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: BarricadeMetalDoorGraph
+  start: start
+  graph:
+  - node: start
+    actions:
+    - !type:DeleteEntity
+    edges:
+    - to: nodeBarricadeMetalDoor
+      completed:
+      - !type:SnapToGrid
+        southRotation: false
+      steps:
+      - material: Steel
+        amount: 15
+        doAfter: 10
+
+  - node: nodeBarricadeMetalDoor
+    entity: CMBarricadeMetalDoor
+    edges:
+    - to: start
+      completed:
+        - !type:SpawnPrototype
+          prototype: SheetSteel1
+          amount: 4
+        - !type:DeleteEntity
+      conditions:
+        - !type:EntityAnchored
+          anchored: false
+      steps:
+        - tool: Screwing
+          doAfter: 5

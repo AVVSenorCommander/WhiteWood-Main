@@ -33,6 +33,21 @@
   - type: Appearance
 
 - type: entity
+  id: MagazineCaselessRifle10x24
+  name: "box magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeCaselessRifle
+    capacity: 99
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/10x24.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+
+- type: entity
   id: BaseMagazinePistolCaselessRifle
   name: "pistol magazine (.25 caseless)"
   parent: BaseMagazineCaselessRifle

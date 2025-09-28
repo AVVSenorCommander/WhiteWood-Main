@@ -1,0 +1,697 @@
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosWeapons
+  suffix: ПХ
+  name: Автоматическая стойка для хранения оружия
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/guns.rsi.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Штурмовые Винтовки
+      entries:
+      - id: WeaponRifleAKM
+        amount: 5
+      - id: MagazineLightRifle
+        amount: 35
+      - id: MagazineBoxBig_30
+        amount: 10
+    - name: Пистолеты-Пулемёты
+      entries:
+      - id: WeaponSubMachineGunNewVector
+        amount: 5
+      - id: MagazinePistolSubMachineGun
+        amount: 35
+      - id: MagazineBoxBig_35
+        amount: 10
+    - name: Пистолеты
+      entries:
+      - id: WeaponPistolCom-15
+        amount: 5
+      - id: MagazinePistol
+        amount: 20
+    - name: Утилиты
+      entries:
+      - id: CombatKnife
+        amount: 5
+      - id: Zipties
+        amount: 30
+      - id: GrenadeFlashBang
+        amount: 5
+    - name: Взрывчатка
+      entries:
+      - id: SmokeGrenade
+        amount: 5
+      - id: GrenadeStinger
+        amount: 5
+      - id: GrenadeIncendiary
+        amount: 2
+      - id: EmpGrenade
+        amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosUniform
+  suffix: ПХ
+  name: Автоматическая стойка для хранения снаряжения
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/clothing.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Броня
+      entries:
+      - id: ClothingHeadHelmetChaos
+        amount: 5
+      - id: ClothingOuterArmorСhaosSCP
+        amount: 5
+    - name: Одежда
+      entries:
+      - id: ClothingUniformJumpsuitСhaosSCP
+        amount: 5
+      - id: ClothingHandsGlovesChaosSCP
+        amount: 5
+      - id: BootsJackbootsСhaosSCP
+        amount: 5
+    - name: Очки
+      entries:
+      - id: ClothingEyesGlassesSmartBallisticSCPChaos
+        amount: 5
+      - id: ClothingEyesHudSpecial
+        amount: 2
+    - name: Рюкзаки
+      entries:
+      - id: ClothingBackpackMilitarySatchel
+        amount: 2
+      - id: ClothingMilitaryBackpack
+        amount: 5
+      - id: ClothingBackpackDuffelMilitary
+        amount: 4
+    - name: Ременно-плечевые системы
+      entries:
+      - id: ClothingBeltMercWebbing
+        amount: 5
+      - id: ClothingBeltAssault
+        amount: 2
+      - id: RMCBeltHolsterRevolver
+        amount: 2
+    - name: Маски
+      entries:
+      - id: ClothingMaskGasChaosIns
+        amount: 5
+      - id: RMCMaskBalaclava
+        amount: 5
+      - id: RMCMaskScarfBlack
+        amount: 2
+      - id: DoubleEmergencyOxygenTankFilled
+        amount: 5
+    - name: Утилиты
+      entries:
+      - id: BoxMRE
+        amount: 10
+      - id: FlashlightSeclite
+        amount: 5
+      - id: FireExtinguisher
+        amount: 5
+      - id: Flare
+        amount: 30
+      - id: PowerCellHigh
+        amount: 5
+    - name: Подсумки
+      entries:
+      - id: RMCPouchMagazineLarge
+        amount: 5
+      - id: RMCPouchLargeDrop
+        amount: 5
+
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosUniformEngi
+  suffix: ПХ
+  name: Автоматическая стойка для хранения снаряжения инженера
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/engi.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Броня
+      entries:
+      - id: ClothingHeadHelmetMTFSCP
+        amount: 1
+      - id: ClothingOuterArmorMTFSCP
+        amount: 1
+    - name: Одежда
+      entries:
+      - id: ClothingHeadHatBeretEngineering
+        amount: 1
+      - id: ClothingUniformJumpsuitСhaosSCP
+        amount: 1
+      - id: ClothingHandsLongFighting
+        amount: 2
+      - id: BootsJackbootsСhaosSCP
+        amount: 1
+      - id: ClothingShoesBootsMag
+        amount: 1
+      - id: ClothingEyesGlassesWelding
+        amount: 3
+      - id: ClothingBeltUtility
+        amount: 3
+    - name: Маски
+      entries:
+      - id: ClothingMaskGasChaosIns
+        amount: 3
+      - id: DoubleEmergencyOxygenTankFilled
+        amount: 1
+    - name: Подсумки
+      entries:
+      - id: RMCPouchСommand
+        amount: 1
+      - id: RMCPouchMagazine
+        amount: 1
+      - id: RMCPouchLargeDrop
+        amount: 2
+    - name: Сумки
+      entries:
+      - id: ClothingBackpackDuffelMilitary
+        amount: 4
+    - name: Инструменты
+      entries:
+      - id: Crowbar
+        amount: 5
+      - id: Wrench
+        amount: 5
+      - id: Screwdriver
+        amount: 5
+      - id: Wirecutter
+        amount: 5
+      - id: WelderIndustrial
+        amount: 5
+      - id: Multitool
+        amount: 5
+      - id: trayScanner
+        amount: 5
+      - id: GasAnalyzer
+        amount: 5
+      - id: LightReplacer
+        amount: 5
+      - id: WeldingFuelCanisterFull
+        amount: 2
+      - id: FlashlightLantern
+        amount: 2
+    - name: Взрывчатка
+      entries:
+      - id: C4
+        amount: 5
+    - name: Утилиты
+      entries:
+      - id: BoxLighttube
+        amount: 5
+      - id: BoxLightbulb
+        amount: 5
+      - id: ToolboxElectricalFilled
+        amount: 2
+      - id: CableApcStack
+        amount: 1
+      - id: CableMVStack
+        amount: 1
+      - id: CableHVStack
+        amount: 1
+    - name: Ресурсы
+      entries:
+      - id: SheetSteel
+        amount: 5
+      - id: SheetGlass
+        amount: 5      
+      - id: SheetPlastic
+        amount: 5
+      - id: SheetPlasteel
+        amount: 3
+      - id: SheetRGlass
+        amount: 3
+    - name: Вооружение
+      entries:
+      - id: WeaponRifleAKM
+        amount: 1
+      - id: WeaponSubMachineGunNewVector
+        amount: 1
+      - id: WeaponRevolverSCP
+        amount: 1
+      - id: MacheteMarine
+        amount: 1
+    - name: Боеприпасы
+      entries:
+      - id: MagazineRifle
+        amount: 5
+      - id: MagazinePistolSubMachineGun
+        amount: 5
+      - id: SpeedLoaderMagnum
+        amount: 5
+      - id: MagazineBoxMagnum
+        amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosUniformMedical
+  suffix: ПХ
+  name: Автоматическая стойка для хранения снаряжения медика
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/medical.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Броня
+      entries:
+      - id: ClothingHeadHelmetMTFSCP
+        amount: 1
+      - id: ClothingOuterArmorMTFSCP
+        amount: 1
+    - name: Одежда
+      entries:
+      - id: ClothingHeadCapChaosMedic
+        amount: 1
+      - id: ClothingUniformJumpsuitСhaosSCP
+        amount: 1
+      - id: ClothingHandsGlovesNitrile
+        amount: 1
+      - id: BootsJackbootsСhaosSCP
+        amount: 1
+      - id: ClothingEyesHudSpecialist
+        amount: 1
+      - id: ClothingBeltMilitaryWebbingMedFilled
+        amount: 1
+    - name: Маски
+      entries:
+      - id: ClothingMaskSterile
+        amount: 1
+      - id: ClothingMaskGasChaosIns
+        amount: 1
+      - id: DoubleEmergencyOxygenTankFilled
+        amount: 1
+    - name: Медицина
+      entries:
+      - id: RegenerativeMesh
+        amount: 5
+      - id: MedicatedSuture
+        amount: 5
+      - id: CMBurnKit
+        amount: 5
+      - id: CMTraumaKit10
+        amount: 5
+      - id: MedkitAdvancedFilled
+        amount: 5
+      - id: StimkitFilled
+        amount: 3
+      - id: MedkitToxinFilled
+        amount: 3
+      - id: MedkitBruteFilled
+        amount: 3
+      - id: MedkitBurnFilled
+        amount: 3
+      - id: MedkitOxygenFilled
+        amount: 3
+      - id: MedkitRadiationFilled
+        amount: 3
+    - name: Утилиты
+      entries:
+      - id: BoxBodyBag
+        amount: 3
+      - id: BoxSurvivalMedical
+        amount: 3
+      - id: BoxBeaker
+        amount: 3
+      - id: BoxBottle
+        amount: 3
+      - id: Syringe
+        amount: 10
+      - id: CheapRollerBedSpawnFolded
+        amount: 5
+      - id: HandheldHealthAnalyzerUnpowered
+        amount: 1
+      - id: DefibrillatorOneHandedUnpowered
+        amount: 1
+      - id: Hypospray
+        amount: 1
+    - name: Подсумки
+      entries:
+      - id: RMCPouchMagazine
+        amount: 1
+      - id: RMCPouchMedkit
+        amount: 2
+      - id: RMCPouchLargeDrop
+        amount: 2
+    - name: Сумки
+      entries:
+      - id: ClothingBackpackDuffelMilitary
+        amount: 2
+    - name: Вооружение
+      entries:
+      - id: WeaponRifleAKM
+        amount: 1
+      - id: WeaponSubMachineGunNewVector
+        amount: 1
+      - id: WeaponRevolverSCP
+        amount: 1
+      - id: MacheteMarine
+        amount: 1
+    - name: Боеприпасы
+      entries:
+      - id: MagazineRifle
+        amount: 5
+      - id: MagazinePistolSubMachineGun
+        amount: 5
+      - id: SpeedLoaderMagnum
+        amount: 5
+      - id: MagazineBoxMagnum
+        amount: 1
+
+
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosUniformSergeant
+  suffix: ПХ
+  name: Автоматическая стойка для хранения снаряжения сержанта
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/sergeant.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Броня
+      entries:
+      - id: ClothingHeadHelmetChaos
+        amount: 1
+      - id: ClothingOuterArmorСhaosSCP
+        amount: 1
+    - name: Одежда
+      entries:
+      - id: ClothingHeadBeretAlpha
+        amount: 1   
+      - id: ClothingUniformJumpsuitСhaosSCP
+        amount: 1
+      - id: ClothingHandsField
+        amount: 1
+      - id: BootsJackbootsСhaosSCP
+        amount: 1
+    - name: Очки
+      entries:
+      - id: ClothingEyesGlassesRPG
+        amount: 1
+    - name: Маски
+      entries:
+      - id: ClothingMaskGasChaosIns
+        amount: 1
+      - id: RMCMaskBalaclava
+        amount: 1
+      - id: RMCMaskScarfBlack
+        amount: 1
+    - name: Рюкзаки
+      entries:
+      - id: ClothingBackpackMilitarySatchel
+        amount: 1
+      - id: ClothingMilitaryBackpack
+        amount: 1
+      - id: ClothingBackpackDuffelMilitary
+        amount: 1
+    - name: Ременно-плечевые системы
+      entries:
+      - id: ClothingBeltAssault
+        amount: 1
+      - id: ClothingBeltMilitaryWebbing
+        amount: 1
+      - id: RMCBeltHolsterRevolver
+        amount: 1
+    - name: Табельное оружие
+      entries:
+      - id: WeaponRevolverSCP
+        amount: 1
+      - id: SpeedLoaderMagnum
+        amount: 5
+      - id: MagazineBoxMagnum
+        amount: 1
+    - name: Основное вооружение
+      entries:
+      - id: WeaponShotgunSPAS12
+        amount: 1
+      - id: MagazineShotgun
+        amount: 4
+      - id: BoxLethalshot
+        amount: 8
+    - name: Утилиты
+      entries:
+      - id: Whistle
+        amount: 1
+      - id: MacheteMarine
+        amount: 1
+      - id: ExGrenade
+        amount: 1
+    - name: Средства подавления
+      entries:
+      - id: Stunbaton
+        amount: 1
+      - id: Handcuffs
+        amount: 3
+      - id: Zipties
+        amount: 5 
+      - id: WeaponDisabler
+        amount: 1
+    - name: Подсумки
+      entries:
+      - id: RMCPouchСommand
+        amount: 1
+      - id: RMCPouchMagazine
+        amount: 1
+      - id: RMCPouchLargeDrop
+        amount: 1
+
+
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosUniformLieutenant
+  suffix: ПХ
+  name: Автоматическая стойка для хранения снаряжения лейтенанта
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/sergeant.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Броня
+      entries:
+      - id: ClothingHeadHelmetChaos
+        amount: 1
+      - id: ClothingOuterArmorСhaosSCP
+        amount: 1
+    - name: Одежда
+      entries:
+      - id: ClothingHeadBereOfficer
+        amount: 1
+      - id: ClothingNeckChaosLieutenant
+        amount: 1        
+      - id: ClothingUniformJumpsuitСhaosSCP
+        amount: 1
+      - id: ClothingHandsField
+        amount: 1
+      - id: ClothingShoesBootsOldАrmy
+        amount: 1
+    - name: Очки
+      entries:
+      - id: ClothingEyesGlassesRPG
+        amount: 1
+    - name: Маски
+      entries:
+      - id: ClothingMaskGasChaosIns
+        amount: 1
+      - id: RMCMaskBalaclava
+        amount: 1
+      - id: RMCMaskScarfBlack
+        amount: 1
+    - name: Рюкзаки
+      entries:
+      - id: ClothingBackpackMilitarySatchel
+        amount: 1
+      - id: ClothingMilitaryBackpack
+        amount: 1
+      - id: ClothingBackpackDuffelMilitary
+        amount: 1
+    - name: Ременно-плечевые системы
+      entries:
+      - id: ClothingBeltAssault
+        amount: 1
+      - id: ClothingBeltMilitaryWebbing
+        amount: 1
+      - id: RMCBeltHolsterRevolver
+        amount: 1
+    - name: Табельное оружие
+      entries:
+      - id: WeaponRevolverSCP
+        amount: 1
+      - id: SpeedLoaderMagnum
+        amount: 5
+      - id: MagazineBoxMagnum
+        amount: 1
+    - name: Основное вооружение
+      entries:
+      - id: WeaponShotgunSPAS12
+        amount: 1
+      - id: MagazineShotgun
+        amount: 4
+      - id: BoxLethalshot
+        amount: 8
+    - name: Утилиты
+      entries:
+      - id: Binoculars
+        amount: 1
+      - id: Whistle
+        amount: 1
+      - id: MacheteMarine
+        amount: 1
+      - id: ExGrenade
+        amount: 1
+    - name: Средства подавления
+      entries:
+      - id: Stunbaton
+        amount: 1
+      - id: Handcuffs
+        amount: 3
+      - id: Zipties
+        amount: 5 
+      - id: WeaponDisabler
+        amount: 1
+    - name: Подсумки
+      entries:
+      - id: RMCPouchСommand
+        amount: 1
+      - id: RMCPouchMagazine
+        amount: 1
+      - id: RMCPouchLargeDrop
+        amount: 1
+
+- type: entity
+  parent: ColMarTechBase
+  id: VendingMachineChaosUniformCommander
+  suffix: ПХ
+  name: Автоматическая стойка для хранения снаряжения капитана
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Structures/Machines/VendingMachines/SCPMarTech/Chaos/сommander.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "base"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+  - type: CMAutomatedVendor
+    sections:
+    - name: Броня
+      entries:
+      - id: ClothingOuterArmorHeavySCP
+        amount: 1
+    - name: Одежда
+      entries:
+      - id: ClothingHeadBereOfficer
+        amount: 1
+      - id: ClothingNeckChaosCaptain
+        amount: 1        
+      - id: ClothingUniformJumpsuitСhaosSCP
+        amount: 1
+      - id: ClothingHandsField
+        amount: 1
+      - id: ClothingShoesBootsOldАrmy
+        amount: 1
+    - name: Очки
+      entries:
+      - id: ClothingEyesGlassesRPG
+        amount: 1
+    - name: Маски
+      entries:
+      - id: ClothingMaskGasChaosIns
+        amount: 1
+      - id: RMCMaskBalaclava
+        amount: 1
+      - id: RMCMaskScarfBlack
+        amount: 1
+    - name: Рюкзаки
+      entries:
+      - id: ClothingBackpackMilitarySatchel
+        amount: 1
+      - id: ClothingMilitaryBackpack
+        amount: 1
+      - id: ClothingBackpackDuffelMilitary
+        amount: 1
+    - name: Ременно-плечевые системы
+      entries:
+      - id: ClothingBeltAssault
+        amount: 1
+      - id: ClothingBeltMilitaryWebbing
+        amount: 1
+      - id: RMCBeltHolsterRevolver
+        amount: 1
+    - name: Табельное оружие
+      entries:
+      - id: WeaponRevolverSCP
+        amount: 1
+      - id: SpeedLoaderMagnum
+        amount: 5
+      - id: MagazineBoxMagnum
+        amount: 1
+    - name: Основное вооружение
+      entries:
+      - id: WeaponLightMachineGunLogicer
+        amount: 1
+      - id: MagazineLightRiflePkBox
+        amount: 7
+    - name: Утилиты
+      entries:
+      - id: Binoculars
+        amount: 1
+      - id: Whistle
+        amount: 1
+      - id: MacheteMarine
+        amount: 1
+      - id: ExGrenade
+        amount: 2
+    - name: Средства подавления
+      entries:
+      - id: Stunbaton
+        amount: 1
+      - id: Handcuffs
+        amount: 3
+      - id: Zipties
+        amount: 5 
+      - id: WeaponDisablerSMG
+        amount: 1
+    - name: Подсумки
+      entries:
+      - id: RMCPouchСommand
+        amount: 1
+      - id: RMCPouchMagazine
+        amount: 2
+      - id: RMCPouchLargeDrop
+        amount: 2

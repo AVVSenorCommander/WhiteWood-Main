@@ -1,0 +1,47 @@
+- type: job
+  id: SCPWarden
+  name: Смотритель охраны комплекса
+  description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
+  playTimeTracker: JobSecurityWarden
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: SCPFoundationSecurity
+      time: 36000
+  startingGear: SCPWardenGear
+  icon: "JobIconSCPWarden"
+  supervisors: Начальнику охраны комплекса
+  canBeAntag: false
+  access:
+  - SCPWarden
+  - SCPSecuritySergeant
+  - SCPSecurity
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Medical
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPWardenGear
+  equipment:
+    head: ClothingHeadHelmetSentrySCP
+    outerClothing: ClothingOuterArmorWardenSCP
+    gloves: ClothingHandsGlovesMTFSCP
+    jumpsuit: ClothingUniformJumpsuitSentrySCP
+    eyes: ClothingEyesGlassesSmartBallisticSCP
+    id: SCPIDCardWarden
+    ears: ClothingHeadsetAltSecurity
+    back: ClothingBackpackSCPMedium
+    mask: RMCMaskBalaclava
+    belt: RMCBeltHolsterBeltSECFilled
+    shoes: BootsJackbootsMTFSCP
+    pocket1: RMCBeltPouchMagazineLargeFilled
+    pocket2: RMCPouchLargeDropFilled
+    suitstorage: WeaponSubMachineGunP90

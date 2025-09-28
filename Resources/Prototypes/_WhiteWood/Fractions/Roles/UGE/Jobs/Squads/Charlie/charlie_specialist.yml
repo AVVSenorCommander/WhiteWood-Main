@@ -1,0 +1,23 @@
+- type: job
+  id: CharlieSpecialist
+  name: Специалист отряда "Чарли"
+  description: Использовать тяжелое вооружение, чтобы сохранить свой отряд в целости и добить ксеноморфов.
+  playTimeTracker: JobCharlieSpecialist
+  startingGear: CharlieSpecialistGear
+  icon: "JobIconCharlieSpecialist"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  access:
+    - Maintenance
+    - SquadCharlie
+    - SquadSpecialist
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: CharlieSpecialistGear
+  equipment:
+    jumpsuit: UGEJumpsuitMarineCharlie
+    id: CSpecialistsIDCard
+    pocket1: EmergencyMedipen

@@ -1,0 +1,78 @@
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasFieldleMasksSCP
+  name: защитный противогаз
+  suffix: SCP, МОГ
+  description: Улучшенная модификация, изготовленная по последним требованиям. Прибор отличается усиленной защитой и высокой эффективностью.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Mask/gas.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Mask/gas.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+- type: entity
+  parent: ClothingMaskGas
+  id: ClothingMaskGasChaosIns
+  name: защитный противогаз
+  suffix: SCP, ПХ
+  description: Улучшенная модификация, изготовленная по последним требованиям. Прибор отличается усиленной защитой и высокой эффективностью.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Mask/gaschaosins.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Mask/gaschaosins.rsi
+  - type: FlashImmunity
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - HamsterWearable
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.90
+        Slash: 0.90
+        Piercing: 0.95
+        Heat: 0.95
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+
+- type: entity
+  parent: ClothingMaskPullableBase
+  id: SCPMaskGasFieldСommander
+  name: полнолицевой защитный противогаз
+  suffix: SCP
+  description: Закрывающая лицо маска, которую можно подключить к системе подачи воздуха. Очищает воздух от вредных газов.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/UGE/Masks/field_commander.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/UGE/Masks/field_commander.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: IdentityBlocker
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Snout
+    hideOnToggle: true
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.93
+        Slash: 0.93
+        Piercing: 0.93
+        Heat: 0.93

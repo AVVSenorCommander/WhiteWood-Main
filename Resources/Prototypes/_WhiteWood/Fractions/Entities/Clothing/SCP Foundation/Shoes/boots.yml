@@ -1,0 +1,46 @@
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: BootsJackbootsMTFSCP
+  name: боевые ботинки
+  suffix: SCP, МОГ
+  description: Армейские ботинки специально разработанные для военизированных подразделений фонда SCP. Они сочетают в себе удобство, технологичность и красоту. Прекрасно подходят как для марш бросков, так и для военных парадов. Обезопасить! Удержать! Сохранить!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Shoes/mtf_guards_boots.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Shoes/mtf_guards_boots.rsi
+    - type: ClothingSlowOnDamageModifier
+      modifier: 0.5
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagSec
+  name: боевые магнитные ботинки
+  suffix: SCP, МОГ
+  description: Защитные магнитные ботинки. Помогают бойцам МОГ оставаться в вертикальном положении и выполнять боевые задачи в любых условиях.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Shoes/magboots-sec.rsi
+    state: icon
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Shoes/magboots-sec.rsi
+  - type: Magboots
+  - type: ClothingSpeedModifier
+    walkModifier: 0.75
+    sprintModifier: 0.7
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.75
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: BootsJackbootsСhaosSCP
+  name: боевые ботинки
+  suffix: SCP, ПХ
+  description: Армейские ботинки, используемые бойцами Повстанцев Хаоса. За всё плохое, против всего хорошего!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Shoes/chaosboots.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Shoes/chaosboots.rsi
+    - type: ClothingSlowOnDamageModifier
+      modifier: 0.5

@@ -1,0 +1,33 @@
+- type: job
+  id: SCPMTFEngineer
+  name: Инженер МОГ
+  description: Держаться поближе к отряду, открывать двери и шлюзы, строить оборонительные пункты.
+  playTimeTracker: JobSCPMTFEngineer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPMTFEngineer
+      time: 18000
+  startingGear: SCPMTFEngineerGear
+  icon: "JobIconSCPMTFEngineer"
+  supervisors: Командиру МОГ, Лейтенанту МОГ, Сержанту МОГ
+  canBeAntag: false
+  access:
+  - SCPMTFEngineer
+  - SCPMTFOperative
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  accessGroups:
+  - SCPFoundationStaff
+  - SCPFoundationSecurity
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPMTFEngineerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMTFSCP
+    id: SCPIDCardMTF_Engineer
+    ears: ClothingHeadsetMTF
+    pocket1: EmergencyMedipen

@@ -1,0 +1,44 @@
+- type: entity
+  id: MagazineRifleM41A
+  name: "магазин M41A (.20)"
+  parent: BaseMagazineCM
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleM41A
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    proto: CartridgeRifle
+    whitelist:
+      tags:
+        - CartridgeRifle
+    capacity: 30
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Ammunition/Magazines/Rifle/m41a2.rsi
+
+- type: Tag
+  id: MagazineRifleM41A
+
+
+- type: entity
+  id: MagazineRifleM4RA
+  name: "магазин M4RA (.30)"
+  parent: BaseMagazineCM
+  components:
+  - type: Tag
+    tags:
+      - MagazineRifleM4RA
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    proto: CartridgeLightRifle
+    whitelist:
+      tags:
+        - CartridgeLightRifle
+    capacity: 25
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Ammunition/Magazines/Rifle/m4spr.rsi
+
+- type: Tag
+  id: MagazineRifleM4RA

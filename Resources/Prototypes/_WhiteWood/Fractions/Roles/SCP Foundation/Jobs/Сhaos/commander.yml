@@ -1,0 +1,56 @@
+- type: job
+  id: SCPNGCommander
+  name: Командир ПХ
+  description: Является непосредственным координатором группировки Повстанцев Хаоса на вражеском объекте.
+  startingGear: ChaosCommanderGear
+  playTimeTracker: JobSCPNGCommander
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPNGCommander
+      time: 72000
+  icon: "JobIconSCPNGCommander"
+  supervisors: Комитету Дельта
+  canBeAntag: false
+  access:
+  - SCPNGCommander
+  - SCPNGLieutenant
+  - SCPNGSergeant
+  - SCPNGMedic
+  - SCPNGEngineer
+  - SCPNGOperative
+  - SCPHead_of_the_zone
+  - SCPEngineer
+  - SCPSenior_scientist
+  - SCPScientist
+  - SCPJanitor
+  - SCPManager
+  - SCPHOS
+  - SCPWarden
+  - SCPSecuritySergeant
+  - SCPSecurity
+  - Captain
+  - Command
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  - ChiefMedicalOfficer
+  - Medical
+  - Chemistry
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: ChaosCommanderGear
+  equipment:
+    head: ClothingHeadBereOfficer
+    gloves: ClothingHandsField
+    jumpsuit: ClothingUniformJumpsuitСhaosSCP
+    eyes: ClothingEyesGlassesRPG
+    id: SCPIDTokenChaosNG_Commander
+    ears: ClothingHeadsetChaos
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchLargeDrop
+    pocket2: RMCPouchСommand

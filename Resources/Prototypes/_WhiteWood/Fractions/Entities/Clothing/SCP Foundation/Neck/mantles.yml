@@ -1,0 +1,59 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMTFCaptain
+  name: Накидка капитана МОГ
+  suffix: SCP, МОГ
+  description: Удобная и шикарная мантия, подобающая только капитану.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/MTFCaptain.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/MTFCaptain.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckChaosCaptain
+  name: Накидка капитана ПХ
+  suffix: SCP, ПХ
+  description: Элегантная чёрно-красная мантия, предназначенный для тех, кто стремится доминировать над противником. Эта мантия символизирует верность, стойкость и мужество - основные качества настоящего полевого командира.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/ChaosCaptain.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/ChaosCaptain.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckMTFLieutenant
+  name: накидка лейтенанта МОГ
+  suffix: SCP, МОГ
+  description: Легкое, бархатистое, непринужденное в движениях, на одном плече, оно как бы говорит о вашем ненадежном командирском положении.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/MTFLieutenant.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/MTFLieutenant.rsi
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckChaosLieutenant
+  name: накидка лейтенанта ПХ
+  suffix: SCP, ПХ
+  description: Легкое, бархатистое, непринужденное в движениях, на одном плече, оно как бы говорит о вашем ненадежном командирском положении.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/ChaosLieutenant.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/ChaosLieutenant.rsi
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckLieutenantRed
+  name: наплечник сержанта
+  suffix: SCP
+  description: Твёрдый, с защитными ставками и покрытый красной тканью. Симолизирует значимость сержанта. 
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/securityofficer.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Neck/Mantles/securityofficer.rsi

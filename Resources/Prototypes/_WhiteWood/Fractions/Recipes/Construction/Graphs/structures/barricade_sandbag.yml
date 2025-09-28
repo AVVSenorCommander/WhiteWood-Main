@@ -1,0 +1,30 @@
+- type: constructionGraph
+  id: BarricadeSandbagGraph
+  start: start
+  graph:
+  - node: start
+    actions:
+    - !type:DeleteEntity
+    edges:
+    - to: nodeSandbag
+      completed:
+      - !type:SnapToGrid
+        southRotation: false
+      steps:
+      - material: WoodPlank
+        amount: 3
+        doAfter: 10
+
+  - node: nodeSandbag
+    entity: CMBarricadeSandbag
+    edges:
+    - to: start
+      completed:
+        - !type:DeleteEntity
+      conditions:
+        - !type:EntityAnchored
+          anchored: false
+      steps:
+        - tool: Screwing
+          doAfter: 6
+

@@ -1,0 +1,49 @@
+﻿- type: entity
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
+  id: ClothingHeadsetMTF
+  name: полноразмерная гарнитура МОГ
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMTF
+      - EncryptionKeySecurity
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Ears/Headsets/MTF.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Ears/Headsets/MTF.rsi
+
+- type: entity
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
+  id: ClothingHeadsetMTFCommander
+  name: полноразмерная гарнитура Командира МОГ
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyO4
+      - EncryptionKeyMTF
+      - EncryptionKeySecurity
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Ears/Headsets/MTF_comand.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Ears/Headsets/MTF_comand.rsi
+
+- type: entity
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
+  id: ClothingHeadsetChaos
+  name: полноразмерная гарнитура ПХ
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyChaos
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Ears/Headsets/Chaos.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/Ears/Headsets/Chaos.rsi

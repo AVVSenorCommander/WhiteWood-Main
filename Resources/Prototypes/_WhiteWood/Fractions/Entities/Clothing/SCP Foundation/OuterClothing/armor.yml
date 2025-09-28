@@ -1,0 +1,96 @@
+
+#Лёгкая Броня
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  id: ClothingOuterArmorSentrySCP
+  name: бронежилет
+  suffix: SCP
+  description: Применяется в комендантском отряде службы безопасности Фонда.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/armor_sentry_guards.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/armor_sentry_guards.rsi
+  - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
+    modifiers:
+      coefficients:
+        Blunt: 0.70
+        Slash: 0.70
+        Piercing: 0.70 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
+        Heat: 0.80
+  - type: ExplosionResistance
+    damageCoefficient: 0.90
+
+# Боевая Броня
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  id: ClothingOuterArmorMTFSCP
+  name: боевая броня
+  suffix: SCP, МОГ
+  description: Бронежилет, используемый бойцами МОГ Фонда SCP. Обезопасить! Удержать! Сохранить!
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/armor_mtf.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/armor_mtf.rsi
+  - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
+    modifiers:
+      coefficients:
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Caustic: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.35
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  id: ClothingOuterArmorСhaosSCP
+  name: боевая броня
+  suffix: SCP, ПХ
+  description: Бронежилет, используемый бойцами Повстанцев Хаоса. За всё плохое, против всего хорошего!
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/chaos_vest.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/chaos_vest.rsi
+  - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
+    modifiers:
+      coefficients:
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Caustic: 0.5
+  - type: ExplosionResistance
+    damageCoefficient: 0.35
+
+# Тяжёлая Броня
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing]
+  id: ClothingOuterArmorHeavySCP
+  name: тяжёлая броня
+  suffix: SCP, ПХ, МОГ
+  description: Изготовленный на заказ комплект специальный комплект брони. Разработан специально для высокопоставленных офицеров, сотрудников службы безопасности и корпоративных наемников. Этот костюм выглядит так, как будто принадлежит офицеру высокого ранга.
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/heavy.rsi
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Clothing/SCP Foundation/OuterClothing/Armor/heavy.rsi
+  - type: Armor #Based on /tg/ but slightly compensated to fit the fact that armor stacks in SS14.
+    modifiers:
+      coefficients:
+        Blunt: 0.20
+        Slash: 0.20
+        Piercing: 0.20
+        Heat: 0.35
+        Caustic: 0.30
+  - type: ExplosionResistance
+    damageCoefficient: 0.40
+  - type: ClothingSpeedModifier
+    walkModifier: .790
+    sprintModifier: .790

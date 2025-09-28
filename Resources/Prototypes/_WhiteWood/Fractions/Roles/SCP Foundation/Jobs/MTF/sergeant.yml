@@ -1,0 +1,35 @@
+- type: job
+  id: SCPMTFSergeant
+  name: Сержант МОГ
+  description: Является младшим Командиром Мобильной Оперативной Группы.
+  playTimeTracker: JobSCPMTFSergeant
+  startingGear: SCPMTFSergeantGear
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: JobSCPMTFSergeant
+      time: 36000
+  icon: "JobIconSCPMTFSpecialist"
+  supervisors: Командиру МОГ, Лейтенанту МОГ
+  canBeAntag: false
+  access:
+  - SCPMTFSergeant
+  - SCPMTFOperative
+  - Command
+  - HeadOfSecurity
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  accessGroups:
+  - SCPFoundationStaff
+  - SCPFoundationSecurity
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPMTFSergeantGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMTFSCP
+    id: SCPIDCardMTF_Sergeant
+    ears: ClothingHeadsetMTFCommander
+    pocket1: EmergencyMedipen

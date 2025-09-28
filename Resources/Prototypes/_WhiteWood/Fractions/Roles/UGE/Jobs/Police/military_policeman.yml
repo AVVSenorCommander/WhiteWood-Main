@@ -1,0 +1,31 @@
+- type: job
+  id: MilitaryPoliceman
+  name: Военный полицейский
+  description: Поддерживать исполнение военного закона.
+  playTimeTracker: JobMilitaryPoliceman
+  startingGear: MilitaryPolicemanGear
+  icon: "JobIconMilitaryPoliceman"
+  supervisors: job-supervisors-police-officer
+  canBeAntag: false
+  accessGroups:
+    - MilitaryPoliceman
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: MilitaryPolicemanGear
+  equipment:
+    head: ClothingHeadHatBeretSecurity
+    outerClothing: ClothingOuterVestArmorSec
+    gloves: ClothingHandsLongFighting
+    jumpsuit: UGEJumpsuitMilitaryPolice
+    eyes: ClothingEyesGlassesRPG
+    id: PolicemanIDCard
+    ears: ClothingHeadsetAltSecurity
+    back: ClothingBackpackSecurity
+    mask: ClothingMaskGasSwat
+    belt: RMCBeltHolsterRevolver
+    shoes: ClothingShoesBootsOldАrmy
+    pocket1: RMCPouchMagazine
+    pocket2: RMCPouchСommand

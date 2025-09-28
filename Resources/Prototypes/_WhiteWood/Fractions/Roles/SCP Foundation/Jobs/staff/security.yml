@@ -1,0 +1,35 @@
+- type: job
+  id: SCPSecurity
+  name: Часовой охраны комплекса
+  description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
+  playTimeTracker: JobSecurity
+  startingGear: SCPSecurityGear
+  icon: "JobIconSCPSecurity"
+  supervisors: Начальнику охраны комплекса, Смотрителю охраны комплекса, Сержанту охраны комплекса
+  canBeAntag: false
+  access:
+  - SCPSecurity
+  - SCPScientist
+  - SCPJanitor
+  - Security
+  - Brig
+  special:
+  - !type:AddComponentSpecial
+
+- type: startingGear
+  id: SCPSecurityGear
+  equipment:
+    head: ClothingHeadHelmetSentrySCP
+    outerClothing: ClothingOuterArmorSentrySCP
+    gloves: ClothingHandsGlovesMTFSCP
+    jumpsuit: ClothingUniformJumpsuitSentrySCP
+    eyes: ClothingEyesGlassesSmartBallisticSCP
+    id: SCPIDCardSecurity
+    ears: ClothingHeadsetAltSecurity
+    back: ClothingBackpackSCPMedium
+    mask: RMCMaskBalaclava
+    belt: RMCBeltHolsterBeltSECFilled
+    shoes: BootsJackbootsMTFSCP
+    pocket1: RMCBeltPouchMagazineLargeFilled
+    pocket2: RMCPouchLargeDropFilled
+    suitstorage: WeaponSubMachineGunMP5

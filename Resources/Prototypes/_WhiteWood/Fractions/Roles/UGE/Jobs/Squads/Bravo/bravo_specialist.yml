@@ -1,0 +1,23 @@
+- type: job
+  id: BravoSpecialist
+  name: Специалист отряда "Браво"
+  description: Использовать тяжелое вооружение, чтобы сохранить свой отряд в целости и добить ксеноморфов.
+  playTimeTracker: JobBravoSpecialist
+  startingGear: BravoSpecialistGear
+  icon: "JobIconBravoSpecialist"
+  supervisors: job-supervisors-commander
+  canBeAntag: false
+  access:
+    - Maintenance
+    - SquadBravo
+    - SquadSpecialist
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: BravoSpecialistGear
+  equipment:
+    jumpsuit: UGEJumpsuitMarineBravo
+    id: BSpecialistsIDCard
+    pocket1: EmergencyMedipen

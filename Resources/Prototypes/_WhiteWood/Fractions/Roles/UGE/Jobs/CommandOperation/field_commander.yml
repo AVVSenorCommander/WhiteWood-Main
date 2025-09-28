@@ -1,0 +1,29 @@
+- type: job
+  id: FieldCommander
+  name: Полевой командир
+  description: Вести своих морпехов на планете к ужасной и неизбежной, но славной смерти. В том числе своей.
+  playTimeTracker: JobFieldCommander
+  startingGear: FieldCommanderGear
+  icon: "JobIconFieldCommander"
+  supervisors: job-supervisors-head-operations
+  canBeAntag: false
+  special:
+  - !type:AddComponentSpecial
+
+
+- type: startingGear
+  id: FieldCommanderGear
+  equipment:
+    head: ClothingHeadCapFieldCommander
+    outerClothing: CMArmorField_commander
+    gloves: ClothingHandsField
+    jumpsuit: UGEJumpsuitFieldСommander
+    eyes: ClothingEyesGlassesRPG
+    id: FieldCommanderIDCard
+    ears: ClothingHeadsetAltCommand
+    back: ClothingBackpackMilitarySatchel
+    mask: CMMaskGasFieldСommander
+    belt: RMCBeltHolsterRevolver
+    shoes: CMBootsBlack
+    pocket1: RMCPouchLargeDrop
+    pocket2: RMCPouchСommand
