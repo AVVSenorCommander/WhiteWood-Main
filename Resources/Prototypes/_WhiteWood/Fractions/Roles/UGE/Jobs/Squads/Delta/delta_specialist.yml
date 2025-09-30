@@ -5,6 +5,7 @@
   playTimeTracker: JobDeltaSpecialist
   startingGear: DeltaSpecialistGear
   icon: "JobIconDeltaSpecialist"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

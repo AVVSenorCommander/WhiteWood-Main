@@ -5,6 +5,7 @@
   playTimeTracker: JobMilitaryScientist
   startingGear: MilitaryScientistGear
   icon: "JobIconMilitaryScientist"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-head-operations
   canBeAntag: false
   access:

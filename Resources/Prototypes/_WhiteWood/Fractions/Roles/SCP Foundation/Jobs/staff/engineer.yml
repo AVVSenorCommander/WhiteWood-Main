@@ -9,6 +9,7 @@
       department: JobSCPEngineer
       time: 18000
   icon: "JobIconSCPEngineer"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Зон
   canBeAntag: false
   access:

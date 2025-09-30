@@ -9,6 +9,7 @@
       time: 36000
   startingGear: SCPWardenGear
   icon: "JobIconSCPWarden"
+  overrideConsoleVisibility: false
   supervisors: Начальнику охраны комплекса
   canBeAntag: false
   access:

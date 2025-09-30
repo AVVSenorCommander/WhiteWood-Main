@@ -5,6 +5,7 @@
   playTimeTracker: JobRigger
   startingGear: RiggerGear
   icon: "JobIconRigger"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-supply-officer
   canBeAntag: false
   access:

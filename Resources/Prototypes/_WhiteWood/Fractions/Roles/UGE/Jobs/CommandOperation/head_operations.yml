@@ -5,6 +5,7 @@
   playTimeTracker: JobHeadOperations
   startingGear: HeadOperationsGear
   icon: "JobIconHeadComm"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-uge
   canBeAntag: false
   special:

@@ -53,7 +53,7 @@
         amount: 9
     - name: Пистолеты
       entries:
-      - id: WeaponRevolverUGEM44
+      - id: WeaponRevolverM44
         amount: 10
       - id: WeaponPistolArmatM5Y3
         amount: 10

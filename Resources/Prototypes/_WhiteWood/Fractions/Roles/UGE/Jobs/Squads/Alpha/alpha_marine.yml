@@ -5,6 +5,7 @@
   playTimeTracker: JobAlfaMarine
   startingGear: AlfaMarineGear
   icon: "JobIconAlfaMarine"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

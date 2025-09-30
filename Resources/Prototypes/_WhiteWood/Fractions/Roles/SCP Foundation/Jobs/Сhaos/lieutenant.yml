@@ -9,6 +9,7 @@
       time: 36000
   startingGear: ChaosLieutenantGear
   icon: "JobIconSCPNGLieutenant"
+  overrideConsoleVisibility: false
   supervisors: Командиру ПХ
   canBeAntag: false
   access:

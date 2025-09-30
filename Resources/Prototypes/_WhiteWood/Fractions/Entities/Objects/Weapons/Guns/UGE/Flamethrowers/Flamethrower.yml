@@ -1,7 +1,29 @@
 - type: entity
+  name: BaseWeaponHeavyMachineGun
+  parent: BaseItem
+  id: BaseWeaponHeavyMachineGunFlamethrower
+  description: Spray and pray
+  abstract: true
+  components:
+  - type: Sprite
+  - type: Item
+    size: Ginormous
+  - type: Gun
+    fireRate: 20
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: StaticPrice
+    price: 500
+
+- type: entity
   name: M240
   id: WeaponFlamethrower
-  parent: BaseWeaponHeavyMachineGun
+  parent: BaseWeaponHeavyMachineGunFlamethrower
   description: И под тяжёлым огнемётом гудит спина моя...
   suffix: Огнемёт, ОПЗ
   components:
@@ -15,6 +37,12 @@
   - type: Item
     sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Flamethrowers/flamethrower.rsi
     size: Large
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Flamethrowers/flamethrower.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: Wieldable
   - type: GunWieldBonus
     minAngle: -20
@@ -162,6 +190,6 @@
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/energy_meat1.ogg"
   - type: TimedDespawn
-    lifetime: 2
+    lifetime: 0.5
   - type: IgniteOnCollide
     fireStacks: 1

@@ -5,6 +5,7 @@
   playTimeTracker: JobDeltaMedic
   startingGear: DeltaMedicGear
   icon: "JobIconDeltaMedic"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   accessGroups:

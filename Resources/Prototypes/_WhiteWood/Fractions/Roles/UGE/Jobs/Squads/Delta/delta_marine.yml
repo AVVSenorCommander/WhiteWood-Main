@@ -5,6 +5,7 @@
   playTimeTracker: JobDeltaMarine
   startingGear: DeltaMarineGear
   icon: "JobIconDeltaMarine"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

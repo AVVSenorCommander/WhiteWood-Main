@@ -5,6 +5,7 @@
   playTimeTracker: JobSCPMTFOperative
   startingGear: SCPMTFOperativeGear
   icon: "JobIconSCPMTFOperative"
+  overrideConsoleVisibility: false
   supervisors: Командиру МОГ, Лейтенанту МОГ, Сержанту МОГ
   canBeAntag: false
   access:

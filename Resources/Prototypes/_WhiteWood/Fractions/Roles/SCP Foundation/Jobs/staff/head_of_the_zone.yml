@@ -9,6 +9,7 @@
       time: 36000
   startingGear: SCPHead_of_the_zoneGear
   icon: "JobIconSCPHead_of_the_zone"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Комплекса
   canBeAntag: false
   access:

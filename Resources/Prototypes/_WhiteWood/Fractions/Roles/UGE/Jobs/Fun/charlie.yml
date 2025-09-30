@@ -5,6 +5,7 @@
     shoes: ClothingShoesComfortableBootsMarine
     head: ClothingHeadHatCatEars
     id: CRiflemanIDCard
+    overrideConsoleVisibility: false
     ears: ClothingHeadsetMarineCharlie
     outerClothing: ClothingOuterArmorMarineComfortable
     belt: ClothingBeltSalvageWebbing

@@ -5,6 +5,7 @@
   playTimeTracker: JobDeltaEngineer
   startingGear: DeltaEngineerGear
   icon: "JobIconDeltaEngineer"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

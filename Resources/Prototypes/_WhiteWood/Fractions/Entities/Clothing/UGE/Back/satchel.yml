@@ -1,9 +1,9 @@
 - type: entity
   parent: [Clothing, ContentsExplosionResistanceBase]
   id: ClothingBackpackSatchelMarine
-  name: USCM satchel
+  name: Ранец ОПЗ
   suffix: ОПЗ
-  description: A heavy-duty satchel carried by some USCM soldiers and support personnel.
+  description: Тяжелый ранец, который носили некоторые солдаты ОПЗ и вспомогательный персонал.
   components:
   - type: Sprite
     sprite: _WhiteWood/Fractions/Clothing/UGE/Back/Satchels/marinesatch.rsi

@@ -5,6 +5,7 @@
   playTimeTracker: JobBravoMarine
   startingGear: BravoMarineGear
   icon: "JobIconBravoMarine"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

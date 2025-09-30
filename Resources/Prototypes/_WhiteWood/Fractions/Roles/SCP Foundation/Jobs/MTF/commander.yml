@@ -9,6 +9,7 @@
       department: JobSCPMTFCommander
       time: 72000
   icon: "JobIconSCPMTFCommander"
+  overrideConsoleVisibility: false
   supervisors: Штабу O4
   canBeAntag: false
   access:

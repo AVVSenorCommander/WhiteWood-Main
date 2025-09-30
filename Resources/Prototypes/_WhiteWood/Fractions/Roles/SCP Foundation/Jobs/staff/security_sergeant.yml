@@ -9,6 +9,7 @@
       time: 18000
   startingGear: SCPSecuritySergeantGear
   icon: "JobIconSCPSecuritySergeant"
+  overrideConsoleVisibility: false
   supervisors: Начальнику охраны комплекса, Смотрителю охраны комплекса
   canBeAntag: false
   access:

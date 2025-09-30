@@ -9,6 +9,7 @@
       time: 18000
   startingGear: ChaosEngineerGear
   icon: "JobIconSCPNGEngineer"
+  overrideConsoleVisibility: false
   supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
   canBeAntag: false
   access:

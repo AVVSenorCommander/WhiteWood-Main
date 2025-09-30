@@ -5,6 +5,7 @@
   playTimeTracker: JobSCPScientist
   startingGear: SCPScientistGear
   icon: "JobIconSCPScientist"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Зон, Старшему научному сотруднику
   canBeAntag: false
   access:

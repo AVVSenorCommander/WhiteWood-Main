@@ -5,6 +5,7 @@
   playTimeTracker: JobBravoCommander
   startingGear: BravoCommanderGear
   icon: "JobIconBravoCommander"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-field-commander
   canBeAntag: false
   access:
