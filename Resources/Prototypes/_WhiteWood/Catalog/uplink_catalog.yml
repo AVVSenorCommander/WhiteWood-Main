@@ -405,3 +405,81 @@
     Productunit: 10
   categories:
   - UplinkERTArmorJanitor
+
+
+# РХБЗЗ
+
+- type: listing
+  id: MilitaryFilledKammerer
+  name: Камерер
+  description: Помповый дробовик Камерер — надежное и простое в использовании оружие.
+  productEntity: ClothingBackpackDuffelMilitaryFilledKammerer
+  cost:
+    Productunit: 5
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: MilitaryFilledSPAS12
+  name: SPAS-12
+  description: Спас-12 — популярный помповый дробовик, отличающийся надежностью, простотой конструкции и высокой огневой мощью. 
+  productEntity: ClothingBackpackDuffelMilitaryFilledSPAS12
+  cost:
+    Productunit: 10
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: MilitaryFilledZauer
+  name: Zauer
+  description: Zauer — это вариант оружия с съемным магазином, позволяющим быстро перезаряжаться и увеличивать боекомплект.
+  productEntity: ClothingBackpackDuffelMilitaryFilledZauer
+  cost:
+    Productunit: 15
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
+  id: MilitaryFilledVector
+  name: Vector
+  description: Пистолет-пулемет Вектор — современное автоматическое оружие, отличающееся компактностью, высокой точностью и надежностью.
+  productEntity: ClothingBackpackDuffelMilitaryFilledMachineGunNewVector
+  cost:
+    Productunit: 20
+  categories:
+  - UplinkCBRUNWeapon
+
+
+# Ammo 
+
+- type: listing
+  id: MilitaryFilledBoxShotgun
+  name: Дополнительные ружейных патроны 
+  description: Дополнительная аммуниция для долгой стрельбы.
+  productEntity: ClothingBackpackDuffelMilitaryFilledBoxShotgun
+  cost:
+    Productunit: 4
+  categories:
+  - UplinkCBRUNAmmo
+
+- type: listing
+  id: MilitaryFilledMagazineShotgun
+  name: Дополнительные ружейные магазины 
+  description: Дополнительная аммуниция для долгой стрельбы.
+  productEntity: ClothingBackpackDuffelMilitaryFilledMagazineShotgun
+  cost:
+    Productunit: 6
+  categories:
+  - UplinkCBRUNAmmo  
+
+
+- type: listing
+  id: DrozdAmmoCBRUN
+  name: Набор магазин "35.авто"
+  description: 5 Магазинов для пистолета-пулемёта Дрозд
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazins.rsi, state: red-icon }
+  productEntity: ClothingBackpackDuffelMilitaryFilledMachine
+  cost:
+    Productunit: 4
+  categories:
+  - UplinkCBRUNAmmo  
