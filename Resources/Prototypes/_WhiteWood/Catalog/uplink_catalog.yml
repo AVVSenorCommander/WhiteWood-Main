@@ -219,13 +219,14 @@
     Productunit: 1
   categories:
   - UplinkERTmedics
+
   #ammo 
 
 - type: listing
   id: DrozdAmmo
   name: Набор магазин "35.авто"
   description: 5 Магазинов для пистолета-пулемёта Дрозд
-  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazins.rsi, state: red-icon }
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazin.rsi, state: blue-icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledMachine
   cost:
     Productunit: 4
@@ -410,12 +411,23 @@
 # РХБЗЗ
 
 - type: listing
+  id: machete 
+  name: Мачете
+  description: Мачете — это длинное ножевое оружие или инструмент, обычно с прямым или слегка изогнутым лезвием длиной от 30 до 60 сантиметров.
+  productEntity: Machete
+  cost:
+    Productunit: 5
+  categories:
+  - UplinkCBRUNWeapon
+
+- type: listing
   id: MilitaryFilledKammerer
   name: Камерер
   description: Помповый дробовик Камерер — надежное и простое в использовании оружие.
+  icon: { sprite: Objects/Weapons/Guns/Shotguns/pump.rsi, state: icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledKammerer
   cost:
-    Productunit: 5
+    Productunit: 10
   categories:
   - UplinkCBRUNWeapon
 
@@ -423,9 +435,10 @@
   id: MilitaryFilledSPAS12
   name: SPAS-12
   description: Спас-12 — популярный помповый дробовик, отличающийся надежностью, простотой конструкции и высокой огневой мощью. 
+  icon: { sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/Shotguns/spas_12/big.rsi, state: icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledSPAS12
   cost:
-    Productunit: 10
+    Productunit: 15
   categories:
   - UplinkCBRUNWeapon
 
@@ -433,9 +446,10 @@
   id: MilitaryFilledZauer
   name: Zauer
   description: Zauer — это вариант оружия с съемным магазином, позволяющим быстро перезаряжаться и увеличивать боекомплект.
+  icon: { sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/Shotguns/zauer/big.rsi, state: icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledZauer
   cost:
-    Productunit: 15
+    Productunit: 20
   categories:
   - UplinkCBRUNWeapon
 
@@ -443,19 +457,21 @@
   id: MilitaryFilledVector
   name: Vector
   description: Пистолет-пулемет Вектор — современное автоматическое оружие, отличающееся компактностью, высокой точностью и надежностью.
+  icon: { sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/SMGs/vector/big.rsi, state: icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledMachineGunNewVector
   cost:
-    Productunit: 20
+    Productunit: 25
   categories:
   - UplinkCBRUNWeapon
 
 
-# Ammo 
+# Ammo  
 
 - type: listing
   id: MilitaryFilledBoxShotgun
-  name: Дополнительные ружейных патроны 
+  name: Дополнительные ружейные патроны 
   description: Дополнительная аммуниция для долгой стрельбы.
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazin.rsi, state: orange-icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledBoxShotgun
   cost:
     Productunit: 4
@@ -466,18 +482,18 @@
   id: MilitaryFilledMagazineShotgun
   name: Дополнительные ружейные магазины 
   description: Дополнительная аммуниция для долгой стрельбы.
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazin.rsi, state: yellow-icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledMagazineShotgun
   cost:
     Productunit: 6
   categories:
   - UplinkCBRUNAmmo  
 
-
 - type: listing
   id: DrozdAmmoCBRUN
   name: Набор магазин "35.авто"
   description: 5 Магазинов для пистолета-пулемёта Дрозд
-  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazins.rsi, state: red-icon }
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazin.rsi, state: blue-icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledMachine
   cost:
     Productunit: 4
