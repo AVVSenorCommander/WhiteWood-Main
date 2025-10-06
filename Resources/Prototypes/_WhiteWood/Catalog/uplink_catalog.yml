@@ -219,13 +219,13 @@
     Productunit: 1
   categories:
   - UplinkERTmedics
+  
   #ammo 
 
 - type: listing
   id: DrozdAmmo
   name: Набор магазин "35.авто"
   description: 5 Магазинов для пистолета-пулемёта Дрозд
-  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazins.rsi, state: red-icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledMachine
   cost:
     Productunit: 4

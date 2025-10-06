@@ -379,8 +379,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledGidra
-  name: Набор Гидра 
-  description: Отличный набор для уборки!
   components:
   - type: StorageFill
     contents:
@@ -391,8 +389,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledLecter
-  name: Набор Лектор
-  description: Стреляем?
   components:
   - type: StorageFill
     contents:
@@ -403,8 +399,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledM90GrenadeLauncher
-  name: Набор M90gl
-  description: Стреляем?
   components:
   - type: StorageFill
     contents:
@@ -415,8 +409,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledMachineGun
-  name: Набор Дрозд
-  description: Стреляем?
   components:
   - type: StorageFill
     contents:
@@ -427,8 +419,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledMachine
-  name: Дополнительная Аммуниция 
-  description: 5 магазина дрозд
   components:
   - type: StorageFill
     contents:
@@ -438,10 +428,7 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledAMMO
-  name: Дополнительная Аммуниция 
-  description: 5 20-ых магазинов 
   components:
   - type: StorageFill
     contents:
       - id: MagazineRifle 
-        amount: 5            

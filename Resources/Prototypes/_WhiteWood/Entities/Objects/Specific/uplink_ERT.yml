@@ -176,7 +176,7 @@
   id: BaseUplinkMed
   name: Блюспейс магазин медика
   description: Блюспейс магазин медика. На задней крышке выцарапано "ROMEL"
-  suffix: 40 ЕТ СБ
+
   components:
   - type: Sprite
     sprite: _WhiteWood/Objects/Specific/ert_uplinkMed.rsi
@@ -194,7 +194,6 @@
   - type: Store
     balance:
       Productunit: 40
-
 
 - type: entity
   name: Единица технологии

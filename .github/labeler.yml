@@ -1,4 +1,4 @@
-﻿"Changes: Sprites":
+"Changes: Sprites":
 - changed-files:
   - any-glob-to-any-file: '**/*.rsi/*.png'
 
@@ -8,6 +8,7 @@
     - 'Resources/Maps/**/*.yml'
     - 'Resources/Prototypes/Maps/**/*.yml'
     - 'Resources/Prototypes/Corvax/Maps/**/*.yml'
+    - 'Resources/Prototypes/_WhiteWood/Maps/**/*.yml'
 
 "Changes: UI":
 - changed-files:
