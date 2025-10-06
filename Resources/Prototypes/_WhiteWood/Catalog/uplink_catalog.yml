@@ -236,7 +236,7 @@
   id: LecterAmmo
   name: Набор магазинов "20.винтовочный"
   description: 5 Магазинов для Лектера и М-90
-  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazin.rsi, state: red-icon }
+  icon: { sprite: /Textures/_WhiteWood/Objects/Specific/magazins.rsi, state: red-icon }
   productEntity: ClothingBackpackDuffelMilitaryFilledAMMO
   cost:
     Productunit: 6
