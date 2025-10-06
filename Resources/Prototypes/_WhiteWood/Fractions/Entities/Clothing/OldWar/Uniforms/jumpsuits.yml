@@ -87,7 +87,43 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitUSSR
+  id: ClothingUniformJumpsuitUSSRGeneral
+  name: Генеральская форма красной армии
+  suffix: OldWar
+  description: форма офицерского состава Советской армии. Окантовка по белому - золотая, по воротнику и разрезу вставки — красная. Нужно делать не как лучше, а как положено.
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/OldWar/Uniforms/Jumpsuit/USSR/general.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/OldWar/Uniforms/Jumpsuit/USSR/general.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUSSROfficer
+  name: офицерская форма красной армии
+  suffix: OldWar
+  description: Полевая форма офицерского состава Советской армии. На погонах виднеются золотые звезды. Молчать! Или я сейчас буду зверствовать!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/OldWar/Uniforms/Jumpsuit/USSR/officer.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/OldWar/Uniforms/Jumpsuit/USSR/officer.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUSSRSergeant
+  name: сержантская форма красной армии
+  suffix: OldWar
+  description: Полевая форма сержантского состава Советской армии. На погонах виднеются золотые лычки. Все в окопы, остальные за мной!
+  components:
+    - type: Sprite
+      sprite: _WhiteWood/Fractions/Clothing/OldWar/Uniforms/Jumpsuit/USSR/sergeant.rsi
+    - type: Clothing
+      sprite: _WhiteWood/Fractions/Clothing/OldWar/Uniforms/Jumpsuit/USSR/sergeant.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitUSSRSoldier
   name: солдатская форма красной армии
   suffix: OldWar
   description: Полевая форма рядового состава Советской армии. На ней не видно погон, но на воротнике расположены алые петлицы.

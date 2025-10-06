@@ -379,9 +379,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledGidra
-  name: армейский вещмешок
-  description: Отличный набор для уборки!
-  suffix: Набор гидра 
   components:
   - type: StorageFill
     contents:
@@ -392,9 +389,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledLecter
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: набор лектор
   components:
   - type: StorageFill
     contents:
@@ -405,9 +399,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledM90GrenadeLauncher
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: набор м90
   components:
   - type: StorageFill
     contents:
@@ -418,9 +409,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledMachineGun
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор Дрозд
   components:
   - type: StorageFill
     contents:
@@ -431,9 +419,6 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledMachine
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор допки пп
   components:
   - type: StorageFill
     contents:
@@ -443,93 +428,7 @@
 - type: entity
   parent: ClothingBackpackDuffelMilitary
   id: ClothingBackpackDuffelMilitaryFilledAMMO
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор допки 20-го калибра
   components:
   - type: StorageFill
     contents:
       - id: MagazineRifle 
-        amount: 5            
-
-- type: entity
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelMilitaryFilledKammerer
-  name: армейский вещмешок
-  description: кто описание читает? by loginsirs
-  suffix: набор каммерер
-  components: 
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunKammerer    
-      - id: BoxShotgunIncendiary 
-        amount: 2        
-      - id: BoxLethalshot
-        amount: 2          
-
-- type: entity
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelMilitaryFilledSPAS12 
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения. 
-  suffix: Набор Спас-12
-  components: 
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunSPAS12   
-      - id: BoxShotgunIncendiary 
-        amount: 2        
-      - id: BoxLethalshot
-        amount: 2           
-
-- type: entity
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelMilitaryFilledZauer 
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор Зауер
-  components: 
-  - type: StorageFill
-    contents:
-      - id: WeaponShotgunZauer 
-      - id: MagazineShotgun
-        amount: 5       
-
-- type: entity
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelMilitaryFilledMachineGunNewVector
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор вектор
-  components:
-  - type: StorageFill
-    contents:
-      - id: WeaponSubMachineGunNewVector
-      - id: MagazinePistolSubMachineGun
-        amount: 4       
-
-- type: entity
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelMilitaryFilledBoxShotgun
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор допка шотган
-  components:
-  - type: StorageFill
-    contents:
-      - id: BoxShotgunIncendiary 
-        amount: 2      
-      - id: BoxLethalshot
-        amount: 2    
-
-- type: entity
-  parent: ClothingBackpackDuffelMilitary
-  id: ClothingBackpackDuffelMilitaryFilledMagazineShotgun
-  name: армейский вещмешок
-  description: Большой вещмешок для хранения любого армейского снаряжения.
-  suffix: Набор магазинов на шотган
-  components:
-  - type: StorageFill
-    contents:
-      - id: MagazineShotgun
-        amount: 4                             
