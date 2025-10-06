@@ -5,6 +5,7 @@
   playTimeTracker: JobAlfaCommander
   startingGear: AlfaCommanderGear
   icon: "JobIconAlfaCommander"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-field-commander
   canBeAntag: false
   access:

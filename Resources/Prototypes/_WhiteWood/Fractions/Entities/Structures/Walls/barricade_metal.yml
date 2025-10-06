@@ -327,7 +327,6 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: AnimationPlayer
   - type: InteractionOutline
   - type: Door
     openSpriteState: folding_metal_closed
@@ -348,8 +347,6 @@
       path: /Audio/Items/ratchet.ogg
     closeSound:
       path: /Audio/Items/ratchet.ogg
-  - type: AccessReader
-    access: [["Maintenance"]]
   - type: Construction
     graph: BarricadeMetalDoorGraph
     node: nodeBarricadeMetalDoor
@@ -384,6 +381,7 @@
           collection: MetalBreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
+  - type: InteractionOutline
   - type: Door
     openSpriteState: plasteel_closed
     closedSpriteState: plasteel

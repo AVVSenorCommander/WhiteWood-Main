@@ -5,6 +5,7 @@
   playTimeTracker: JobBravoSpecialist
   startingGear: BravoSpecialistGear
   icon: "JobIconBravoSpecialist"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

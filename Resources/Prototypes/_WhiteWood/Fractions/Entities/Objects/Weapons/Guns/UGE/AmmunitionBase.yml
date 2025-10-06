@@ -68,7 +68,6 @@
   name: BaseCartridgeCM
   parent: BaseCartridge
   abstract: true
-  suffix: ОПЗ
   components:
   - type: CartridgeAmmo
     #proto: BulletRifle1024

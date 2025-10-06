@@ -9,6 +9,7 @@
       department: SCPFoundationDirector
       time: 72000
   icon: "JobIconSCPManager"
+  overrideConsoleVisibility: false
   supervisors: Штабу O4
   canBeAntag: false
   special:

@@ -5,6 +5,7 @@
   playTimeTracker: JobCharlieMarine
   startingGear: CharlieMarineGear
   icon: "JobIconCharlieMarine"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

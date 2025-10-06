@@ -5,6 +5,7 @@
   playTimeTracker: JobBravoMedic
   startingGear: BravoMedicGear
   icon: "JobIconBravoMedic"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   accessGroups:

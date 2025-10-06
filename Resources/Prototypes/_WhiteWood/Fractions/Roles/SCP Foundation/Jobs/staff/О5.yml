@@ -5,6 +5,7 @@
   playTimeTracker: O5
   startingGear: SCPO5Gear
   icon: "JobIconSCPO5"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-head-operations
   accessGroups:
   - SCPFoundationStaff

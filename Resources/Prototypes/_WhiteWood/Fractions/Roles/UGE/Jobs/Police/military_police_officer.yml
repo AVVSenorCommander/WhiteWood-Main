@@ -5,6 +5,7 @@
   playTimeTracker: JobMilitaryPoliceOfficer
   startingGear: MilitaryPoliceOfficerGear
   icon: "JobIconMilitaryPoliceOfficer"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-staff-officer
   canBeAntag: false
   accessGroups:

@@ -9,6 +9,7 @@
       time: 18000
   startingGear: SCPSenior_scientistGear
   icon: "JobIconSCPSenior_scientist"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Зон
   canBeAntag: false
   access:

@@ -5,6 +5,7 @@
   playTimeTracker: JobSecurity
   startingGear: SCPSecurityGear
   icon: "JobIconSCPSecurity"
+  overrideConsoleVisibility: false
   supervisors: Начальнику охраны комплекса, Смотрителю охраны комплекса, Сержанту охраны комплекса
   canBeAntag: false
   access:

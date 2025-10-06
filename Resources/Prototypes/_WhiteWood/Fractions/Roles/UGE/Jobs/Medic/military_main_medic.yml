@@ -5,6 +5,7 @@
   playTimeTracker: JobMilitaryMainMedic
   startingGear: MilitaryMainMedicGear
   icon: "JobIconMilitaryMainMedic"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-staff-officer
   canBeAntag: false
   accessGroups:

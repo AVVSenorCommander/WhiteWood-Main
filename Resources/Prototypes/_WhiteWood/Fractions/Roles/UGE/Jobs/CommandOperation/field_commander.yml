@@ -5,6 +5,7 @@
   playTimeTracker: JobFieldCommander
   startingGear: FieldCommanderGear
   icon: "JobIconFieldCommander"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-head-operations
   canBeAntag: false
   special:

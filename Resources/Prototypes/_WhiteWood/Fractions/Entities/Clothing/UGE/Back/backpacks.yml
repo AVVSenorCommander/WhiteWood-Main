@@ -2,8 +2,8 @@
   parent: Clothing
   id: ClothingBackpackMarine
   suffix: ОПЗ
-  name: lightweight IMP backpack
-  description: The standard-issue pack of the USCM forces. Designed to lug gear into the battlefield.
+  name: легкий рюкзак
+  description: Стандартный набор для вооруженных сил ОПЗ. Предназначен для переноски снаряжения на поле боя.
   components:
   - type: Sprite
     sprite: _WhiteWood/Fractions/Clothing/UGE/Back/Backpacks/marinepack.rsi

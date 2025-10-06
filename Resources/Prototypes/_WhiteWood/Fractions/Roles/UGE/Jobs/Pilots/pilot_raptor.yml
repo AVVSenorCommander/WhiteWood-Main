@@ -5,6 +5,7 @@
   playTimeTracker: JobPilotRaptor
   startingGear: PilotOfficerGear
   icon: "JobIconPilotOfficer"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-staff-officer
   canBeAntag: false
   access:

@@ -9,6 +9,7 @@
       time: 36000
   startingGear: ChaosSergeantGear
   icon: "JobIconSCPNGSpecialist"
+  overrideConsoleVisibility: false
   supervisors: Командиру ПХ, Лейтенанту ПХ
   canBeAntag: false
   access:

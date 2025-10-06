@@ -5,6 +5,7 @@
   playTimeTracker: JobPilotMech
   startingGear: MechPilotGear
   icon: "JobIconPilotMech"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-staff-officer
   canBeAntag: false
   access:

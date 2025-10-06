@@ -9,6 +9,7 @@
       time: 18000
   startingGear: SCPMTFEngineerGear
   icon: "JobIconSCPMTFEngineer"
+  overrideConsoleVisibility: false
   supervisors: Командиру МОГ, Лейтенанту МОГ, Сержанту МОГ
   canBeAntag: false
   access:

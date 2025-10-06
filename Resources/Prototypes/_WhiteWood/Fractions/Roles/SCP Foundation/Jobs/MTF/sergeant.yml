@@ -9,6 +9,7 @@
       department: JobSCPMTFSergeant
       time: 36000
   icon: "JobIconSCPMTFSpecialist"
+  overrideConsoleVisibility: false
   supervisors: Командиру МОГ, Лейтенанту МОГ
   canBeAntag: false
   access:
