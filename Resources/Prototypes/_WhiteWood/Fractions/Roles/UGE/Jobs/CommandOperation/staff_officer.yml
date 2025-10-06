@@ -15,16 +15,14 @@
 - type: startingGear
   id: StaffOfficerGear
   equipment:
-    head: ClothingHeadCapOfficerWhite
-#    outerClothing: CMCoatSeniorOfficerWhite
+    head: ClothingHeadCapService
     gloves: ClothingHandsField
     jumpsuit: UGEJumpsuitOfficer
     eyes: ClothingEyesGlassesRPG
     id: StaffOfficerIDCard
-    mask: CMMaskGasFieldСommander
     ears: ClothingHeadsetAltCommand
-    back: ClothingBackpackSatchelLeather
-    belt: ClothingBeltGermanОfficerHolsterGreen
+    back: ClothingBackpackSatchelMarine
+    belt: RMCBeltHolsterRevolver
     shoes: CMBootsBlack
     pocket1: RMCPouchLargeDrop
     pocket2: RMCPouchСommand
