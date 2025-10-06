@@ -76,6 +76,20 @@
     - Productunit       
 
 - type: entity
+  id: StorePresetUplinkCBRUN 
+  abstract: true
+  components:
+  - type: Store
+    name: store-preset-name-uplink
+    categories:
+    - UplinkCBRUNWeapon
+    - UplinkCBRUNAmmo
+    - UplinkERTMed 
+    - UplinkERTMisc
+    currencyWhitelist:
+    - Productunit
+
+- type: entity
   parent: [BaseItem,  StorePresetUplinkERTLider]
   id: BaseUplinkLider
   name: Блюспейс магазин Лидера обр
@@ -176,7 +190,7 @@
   id: BaseUplinkMed
   name: Блюспейс магазин медика
   description: Блюспейс магазин медика. На задней крышке выцарапано "ROMEL"
-  suffix: 40 ЕТ СБ
+  suffix: 40 ЕТ мед
   components:
   - type: Sprite
     sprite: _WhiteWood/Objects/Specific/ert_uplinkMed.rsi
@@ -195,6 +209,29 @@
     balance:
       Productunit: 40
 
+- type: entity
+  parent: [BaseItem,  StorePresetUplinkCBRUN]
+  id: BaseUplinkCBRUN
+  name: Блюспейс магазин РХБЗЗ
+  description: Блюспейс магазин РХБЗЗ. Выглядит старым и повидавший многое...
+  suffix: 30 ЕТ 
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Specific/CBRUN_uplink.rsi
+    layers:
+    - state: icon
+  - type: Item
+    sprite: _WhiteWood/Objects/Specific/CBRUN_uplink.rsi
+    heldPrefix: icon
+  - type: UserInterface
+    interfaces:
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+  - type: ActivatableUI
+    key: enum.StoreUiKey.Key
+  - type: Store
+    balance:
+      Productunit: 30
 
 - type: entity
   name: Единица технологии
@@ -246,12 +283,22 @@
   priority: 1
 
 - type: storeCategory
+  id: UplinkCBRUNWeapon
+  name: Вооружение
+  priority: 1  
+
+- type: storeCategory
   id: UplinkERTMisc
   name: Разное
   priority: 8
 
 - type: storeCategory
   id: UplinkERTAmmo
+  name: Аммуниция
+  priority: 2
+
+- type: storeCategory
+  id: UplinkCBRUNAmmo
   name: Аммуниция
   priority: 2
 
