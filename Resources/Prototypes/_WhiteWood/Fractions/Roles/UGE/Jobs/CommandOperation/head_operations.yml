@@ -22,7 +22,6 @@
     id: HeadOperationsIDCard
     ears: ClothingHeadsetAltCommand
     back: ClothingBackpackMilitarySatchel
-    mask: CMMaskGasFieldСommander
     belt: RapierBeltSheathFilled
     shoes: CMBootsBlack
     pocket1: RMCPouchLargeDrop

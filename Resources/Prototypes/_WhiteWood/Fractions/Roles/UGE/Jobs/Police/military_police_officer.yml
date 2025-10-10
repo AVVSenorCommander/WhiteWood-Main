@@ -17,13 +17,14 @@
 - type: startingGear
   id: MilitaryPoliceOfficerGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitMilitaryPoliceOfficer
+    jumpsuit: UGEJumpsuitOfficerMilitaryPolice
     back: ClothingBackpackHOSFilled
-    shoes: ClothingShoesBootsJackSec # Corvax-Resprite
+    shoes: ClothingShoesBootsOldАrmy # Corvax-Resprite
     outerClothing: ClothingOuterCoatHoSTrench
     eyes: ClothingEyesGlassesSecurity
     head: ClothingHeadHatBeretHoS
     gloves: ClothingHandsGlovesCombat
+    belt: RMCFieldBeltHolster
     id: PoliceOfficerIDCard
     ears: ClothingHeadsetSecurity
     pocket1: EmergencyMedipen
