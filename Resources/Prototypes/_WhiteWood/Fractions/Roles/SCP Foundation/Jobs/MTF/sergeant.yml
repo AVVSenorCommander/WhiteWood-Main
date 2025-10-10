@@ -5,9 +5,9 @@
   playTimeTracker: JobSCPMTFSergeant
   startingGear: SCPMTFSergeantGear
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPMTFSergeant
-      time: 36000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPMTFSergeant
+#      time: 36000
   icon: "JobIconSCPMTFSpecialist"
   overrideConsoleVisibility: false
   supervisors: Командиру МОГ, Лейтенанту МОГ

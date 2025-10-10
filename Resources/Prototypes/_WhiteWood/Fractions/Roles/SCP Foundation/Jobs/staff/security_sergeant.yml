@@ -4,9 +4,9 @@
   description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
   playTimeTracker: JobSecuritySergeant
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: SCPFoundationSecurity
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: SCPFoundationSecurity
+#      time: 18000
   startingGear: SCPSecuritySergeantGear
   icon: "JobIconSCPSecuritySergeant"
   overrideConsoleVisibility: false

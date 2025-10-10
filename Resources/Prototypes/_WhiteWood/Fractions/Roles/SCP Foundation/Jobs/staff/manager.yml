@@ -5,9 +5,9 @@
   startingGear: SCPManagerGear
   playTimeTracker: JobSCPManager
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: SCPFoundationDirector
-      time: 72000
+#    - !type:DepartmentTimeRequirement
+#      department: SCPFoundationDirector
+#      time: 72000
   icon: "JobIconSCPManager"
   overrideConsoleVisibility: false
   supervisors: Штабу O4
