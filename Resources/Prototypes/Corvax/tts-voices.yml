@@ -7,7 +7,7 @@
 - type: ttsVoice
   id: Baya
   name: tts-voice-name-baya
-  sex: Female
+  sex: Unsexed
   speaker: baya
 
 - type: ttsVoice
@@ -33,18 +33,21 @@
   name: tts-voice-name-garithos
   sex: Male
   speaker: garithos
+  roundStart: false
 
 - type: ttsVoice
   id: Maiev
   name: tts-voice-name-maiev
   sex: Female
   speaker: maiev
+  roundStart: false
 
 - type: ttsVoice
   id: Myron
-  name: Мира
-  sex: Female
+  name: tts-voice-name-myron
+  sex: Unsexed
   speaker: myron
+  roundStart: false
 
 - type: ttsVoice
   id: Oleg
@@ -75,34 +78,3 @@
   name: Нудик
   sex: Male
   speaker: zanud
-
-- type: ttsVoice
-  id: Robot
-  name: Робот
-  sex: Male
-  speaker: semen
-  roundStart: false
-
-- type: ttsVoice
-  id: Boyar
-  name: Боярин
-  sex: Male
-  speaker: boyar
-
-- type: ttsVoice
-  id: Vika
-  name: Вика
-  sex: Female
-  speaker: vika
-
-- type: ttsVoice
-  id: Popovich
-  name: Попович
-  sex: Male
-  speaker: popovich
-
-- type: ttsVoice
-  id: Zlata
-  name: Злата
-  sex: Female
-  speaker: zlata
