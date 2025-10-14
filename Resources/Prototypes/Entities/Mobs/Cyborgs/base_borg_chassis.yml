@@ -254,7 +254,7 @@
     penetrateDamage: 75 # It's harder to kill iron golem
     damagePenalty: 0.25
   - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+    voice: Robot
   - type: Targeting # Corvax-Next-Surgery
   - type: Skills # Corvax-Next-Skills
     skills:

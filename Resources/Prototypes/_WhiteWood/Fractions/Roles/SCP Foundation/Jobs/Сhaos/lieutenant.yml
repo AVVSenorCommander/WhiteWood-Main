@@ -4,9 +4,9 @@
   description: Является “правой” рукой Командира Повстанцев Хаоса.
   playTimeTracker: JobSCPNGLieutenant
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPNGLieutenant
-      time: 36000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPNGLieutenant
+#      time: 36000
   startingGear: ChaosLieutenantGear
   icon: "JobIconSCPNGLieutenant"
   overrideConsoleVisibility: false

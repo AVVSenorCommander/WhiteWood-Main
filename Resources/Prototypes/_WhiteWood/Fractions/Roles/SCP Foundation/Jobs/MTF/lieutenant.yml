@@ -5,9 +5,9 @@
   playTimeTracker: JobSCPMTFLieutenant
   startingGear: SCPMTFLieutenantGear
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPMTFLieutenant
-      time: 36000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPMTFLieutenant
+#      time: 36000
   icon: "JobIconSCPMTFLieutenant"
   overrideConsoleVisibility: false
   supervisors: Командиру МОГ

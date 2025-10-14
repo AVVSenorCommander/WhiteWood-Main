@@ -5,9 +5,9 @@
   startingGear: ChaosCommanderGear
   playTimeTracker: JobSCPNGCommander
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPNGCommander
-      time: 72000
+#    - !type:DepartmentTimeRequirement
+#     department: JobSCPNGCommander
+#      time: 72000
   icon: "JobIconSCPNGCommander"
   overrideConsoleVisibility: false
   supervisors: Комитету Дельта

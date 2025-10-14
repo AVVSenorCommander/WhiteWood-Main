@@ -4,9 +4,9 @@
   description: Является младшим Командиром Повстанцев Хаоса.
   playTimeTracker: JobSCPNGSergeant
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPNGSergeant
-      time: 36000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPNGSergeant
+#      time: 36000
   startingGear: ChaosSergeantGear
   icon: "JobIconSCPNGSpecialist"
   overrideConsoleVisibility: false
