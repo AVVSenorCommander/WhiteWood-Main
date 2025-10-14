@@ -9,4 +9,15 @@
   "states": [
     {
       "name": "red-icon"
-
+        },
+        {
+            "name": "blue-icon"
+        },
+        {
+            "name": "orange-icon"
+        },
+        {
+            "name": "yellow-icon"
+        }
+    ]
+}
