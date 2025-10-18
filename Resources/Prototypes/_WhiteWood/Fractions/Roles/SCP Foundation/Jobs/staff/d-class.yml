@@ -5,6 +5,7 @@
   playTimeTracker: JobSCPJanitor
   startingGear: SCPJanitorGear
   icon: "JobIconSCPJanitor"
+  overrideConsoleVisibility: false
   supervisors: Научному персоналу, Охране комплекса, Командованию комплекса
   canBeAntag: false
   access:

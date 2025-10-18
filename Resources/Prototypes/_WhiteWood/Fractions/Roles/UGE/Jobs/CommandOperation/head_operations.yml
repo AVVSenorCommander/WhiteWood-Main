@@ -5,6 +5,7 @@
   playTimeTracker: JobHeadOperations
   startingGear: HeadOperationsGear
   icon: "JobIconHeadComm"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-uge
   canBeAntag: false
   special:
@@ -21,8 +22,7 @@
     id: HeadOperationsIDCard
     ears: ClothingHeadsetAltCommand
     back: ClothingBackpackMilitarySatchel
-    mask: CMMaskGasFieldСommander
-    belt: CMBeltSheath
+    belt: RapierBeltSheathFilled
     shoes: CMBootsBlack
     pocket1: RMCPouchLargeDrop
     pocket2: RMCPouchСommand

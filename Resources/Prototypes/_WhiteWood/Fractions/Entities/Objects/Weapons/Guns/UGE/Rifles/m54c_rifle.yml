@@ -3,7 +3,7 @@
   parent: [BaseWeaponRifle, BaseRestrictedContraband]
   id: CMWeaponM41A2
   suffix: Импульсная винтовка, ОПЗ
-  description: Усовершенствованная версия уже отличной M41A2. Использует безгильзовые патроны 25-го калибра.
+  description: Усовершенствованная версия M41A. Стоит на вооружении спецподразделений ОПЗ. Использует безгильзовые патроны 25-го калибра.
   components:
   - type: Sprite
     sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/UGE/Rifles/m41a2.rsi
@@ -79,11 +79,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeRifle
+        startingItem: CartridgeRifle1024
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle
+            - CartridgeRifle1024
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

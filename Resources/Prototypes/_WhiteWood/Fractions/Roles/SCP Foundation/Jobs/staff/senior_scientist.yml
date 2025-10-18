@@ -4,11 +4,12 @@
   description: Вы – работник фонда, отвечающий за научную/исследовательскую деятельность, так или иначе, вы служите фонду и подчиняетесь тем кто выше вас по должности.
   playTimeTracker: JobSCPSenior_scientist
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: SCPFoundationStaff
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: SCPFoundationStaff
+#      time: 18000
   startingGear: SCPSenior_scientistGear
   icon: "JobIconSCPSenior_scientist"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Зон
   canBeAntag: false
   access:

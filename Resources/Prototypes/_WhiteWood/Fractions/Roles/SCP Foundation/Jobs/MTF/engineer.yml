@@ -4,11 +4,12 @@
   description: Держаться поближе к отряду, открывать двери и шлюзы, строить оборонительные пункты.
   playTimeTracker: JobSCPMTFEngineer
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPMTFEngineer
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPMTFEngineer
+#      time: 18000
   startingGear: SCPMTFEngineerGear
   icon: "JobIconSCPMTFEngineer"
+  overrideConsoleVisibility: false
   supervisors: Командиру МОГ, Лейтенанту МОГ, Сержанту МОГ
   canBeAntag: false
   access:

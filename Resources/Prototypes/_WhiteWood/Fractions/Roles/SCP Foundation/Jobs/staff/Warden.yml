@@ -4,11 +4,12 @@
   description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
   playTimeTracker: JobSecurityWarden
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: SCPFoundationSecurity
-      time: 36000
+#    - !type:DepartmentTimeRequirement
+#      department: SCPFoundationSecurity
+#      time: 36000
   startingGear: SCPWardenGear
   icon: "JobIconSCPWarden"
+  overrideConsoleVisibility: false
   supervisors: Начальнику охраны комплекса
   canBeAntag: false
   access:

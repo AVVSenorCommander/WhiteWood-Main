@@ -4,11 +4,12 @@
   description: Держаться поближе к отряду, открывать двери и шлюзы, строить оборонительные пункты.
   playTimeTracker: JobSCPNGEngineer
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPNGEngineer
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPNGEngineer
+#      time: 18000
   startingGear: ChaosEngineerGear
   icon: "JobIconSCPNGEngineer"
+  overrideConsoleVisibility: false
   supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
   canBeAntag: false
   access:

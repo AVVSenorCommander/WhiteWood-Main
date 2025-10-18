@@ -4,11 +4,12 @@
   description: Вы — сотрудник cлужбы безопасности — подразделение, отвечающие за охрану и защиту всех учреждений и SCP объектов Фонда независимо от их приоритета.
   playTimeTracker: JobSCPHOS
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: SCPFoundationSecurity
-      time: 72000
+#    - !type:DepartmentTimeRequirement
+#      department: SCPFoundationSecurity
+#      time: 72000
   startingGear: SCPHOSGear
   icon: "JobIconSCPHSecurity"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Комплекса
   canBeAntag: false
   access:

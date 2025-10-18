@@ -11,7 +11,7 @@
     - id: NukeDisk
     - id: LuxuryPen
     - id: SmokeGrenade
-    - id: SCPMaskGasFieldСommander
+    - id: ClothingMaskGas
     - id: RubberStampManager
 
 - type: entityTable
@@ -20,7 +20,7 @@
     children:
     - id: BoxFolderRed
     - id: LuxuryPen
-    - id: SCPMaskGasFieldСommander
+    - id: ClothingMaskGas
     - id: SmokeGrenade
     - id: Flash
     - id: RubberStampHead_of_the_zone

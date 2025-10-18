@@ -5,6 +5,7 @@
   playTimeTracker: JobStaffOfficer
   startingGear: StaffOfficerGear
   icon: "JobIconStaffOfficer"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-centcom
   canBeAntag: false
   special:
@@ -14,16 +15,14 @@
 - type: startingGear
   id: StaffOfficerGear
   equipment:
-    head: ClothingHeadCapOfficerWhite
-    outerClothing: CMCoatSeniorOfficerWhite
+    head: ClothingHeadCapService
     gloves: ClothingHandsField
-    jumpsuit: UGEJumpsuitOfficerWhite
+    jumpsuit: UGEJumpsuitOfficer
     eyes: ClothingEyesGlassesRPG
     id: StaffOfficerIDCard
-    mask: CMMaskGasFieldСommander
     ears: ClothingHeadsetAltCommand
-    back: ClothingBackpackSatchelLeather
-    belt: ClothingBeltGermanОfficerHolsterGreen
-    shoes: ClothingShoesBootsOldАrmy
+    back: ClothingBackpackSatchelMarine
+    belt: RMCBeltHolsterRevolver
+    shoes: CMBootsBlack
     pocket1: RMCPouchLargeDrop
     pocket2: RMCPouchСommand

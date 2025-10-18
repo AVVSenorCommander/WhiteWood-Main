@@ -4,11 +4,12 @@
   description: Держать отряд в боеспособном состоянии, оттаскивать трупы за баррикады, закидываться эфедрином и догонять сбежавшего Менеджера.
   playTimeTracker: JobSCPNGMedic
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPNGMedic
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPNGMedic
+#      time: 18000
   startingGear: ChaosMedicGear
   icon: "JobIconSCPNGMedic"
+  overrideConsoleVisibility: false
   supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
   canBeAntag: false
   access:

@@ -5,6 +5,7 @@
   playTimeTracker: JobAlfaSpecialist
   startingGear: AlfaSpecialistGear
   icon: "JobIconAlfaSpecialist"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

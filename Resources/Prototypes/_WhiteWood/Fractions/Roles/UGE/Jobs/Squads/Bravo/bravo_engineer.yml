@@ -5,6 +5,7 @@
   playTimeTracker: JobBravoEngineer
   startingGear: BravoEngineerGear
   icon: "JobIconBravoEngineer"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-commander
   canBeAntag: false
   access:

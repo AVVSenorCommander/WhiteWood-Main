@@ -5,6 +5,7 @@
   playTimeTracker: JobFieldCommander
   startingGear: FieldCommanderGear
   icon: "JobIconFieldCommander"
+  overrideConsoleVisibility: false
   supervisors: job-supervisors-head-operations
   canBeAntag: false
   special:
@@ -23,7 +24,7 @@
     ears: ClothingHeadsetAltCommand
     back: ClothingBackpackMilitarySatchel
     mask: CMMaskGasFieldСommander
-    belt: RMCBeltHolsterRevolver
+    belt: RMCFieldBeltHolster
     shoes: CMBootsBlack
     pocket1: RMCPouchLargeDrop
     pocket2: RMCPouchСommand

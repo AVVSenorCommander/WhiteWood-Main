@@ -5,6 +5,7 @@
   playTimeTracker: JobSCPNGOperative
   startingGear: ChaosOperativeGear
   icon: "JobIconSCPNGOperative"
+  overrideConsoleVisibility: false
   supervisors: Командиру ПХ, Лейтенанту ПХ, Сержанту ПХ
   canBeAntag: false
   access:

@@ -5,10 +5,11 @@
   playTimeTracker: JobSCPEngineer
   startingGear: SCPEngineerGear
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPEngineer
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPEngineer
+#      time: 18000
   icon: "JobIconSCPEngineer"
+  overrideConsoleVisibility: false
   supervisors: Менеджеру Зон
   canBeAntag: false
   access:

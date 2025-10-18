@@ -4,11 +4,12 @@
   description: Держать отряд в боеспособном состоянии, оттаскивать трупы за баррикады, закидываться эфедрином и бежать с автоматом на араву Повстанцев Хаоса.
   playTimeTracker: JobSCPMTFMedic
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: JobSCPMTFMedic
-      time: 18000
+#    - !type:DepartmentTimeRequirement
+#      department: JobSCPMTFMedic
+#      time: 18000
   startingGear: SCPMTFMedicGear
   icon: "JobIconSCPMTFMedic"
+  overrideConsoleVisibility: false
   supervisors: Командиру МОГ, Лейтенанту МОГ, Сержанту МОГ
   canBeAntag: false
   access:
