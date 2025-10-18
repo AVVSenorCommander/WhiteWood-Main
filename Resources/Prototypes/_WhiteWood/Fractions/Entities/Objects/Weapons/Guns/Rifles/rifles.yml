@@ -27,7 +27,7 @@
     maxAngle: 45
     fireRate: 5  # 10 в секунду - реалистично. 5, так как сс14
     soundGunshot:
-      path: /Audio/_WhiteWood/Fractions/Weapons/Guns/Gunshots/mtf-e11-sr.ogg
+      path: /Audio/_WhiteWood/Fractions/Weapons/Guns/Gunshots/ak74-2.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -59,6 +59,69 @@
   - type: Wieldable
   - type: UseDelay
     delay: 0.5
+    
+- type: entity
+  name: Ак-74
+  parent: BaseWeaponRifle
+  id: WeaponRifleAK
+  description: Культовое оружие всех войн. Использует патроны калибра .30 винтовочный. 
+  suffix: loginsirs
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/Rifles/АК47/big.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/Rifles/АК47/tiny.rsi
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,5,2
+    sprite: _WhiteWood/Fractions/Objects/Weapons/Guns/Rifles/АК47/tiny.rsi
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -35
+  - type: Gun
+    minAngle: 24
+    maxAngle: 45
+    fireRate: 5  # 10 в секунду - реалистично. 5, так как сс14
+    soundGunshot:
+      path: /Audio/_WhiteWood/Fractions/Weapons/Guns/Gunshots/ak74-2.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifle
+        insertSound: /Audio/_WhiteWood/Fractions/Weapons/Guns/Rifles/AK/ak_reload.ogg
+        ejectSound: /Audio/_WhiteWood/Fractions/Weapons/Guns/Rifles/AK/ak_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgeLightRifle
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  - type: Wieldable
+  - type: UseDelay
+    delay: 0.5
+
 
 - type: entity
   name: M16A4

@@ -293,3 +293,18 @@
   id: Janitor
   name: Уборка
   priority: 5   
+
+- type: entity
+  parent: BaseItem
+  id: login
+  name: loginsirs
+  description: я тут
+  suffix: loginsirs
+  components:
+  - type: Sprite
+    sprite: _WhiteWood/Objects/Decoration/login.rsi
+    layers:
+    - state: login
+  - type: Item
+    sprite: _WhiteWood/Objects/Decoration/login.rsi
+    heldPrefix: login
