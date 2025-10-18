@@ -4,6 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using Content.Shared.Corvax.CCCVars;
@@ -53,6 +54,7 @@ public sealed class TTSManager
         }, true);
         _cfg.OnValueChanged(CCCVars.TTSApiUrl, v => _apiUrl = v, true);
         _cfg.OnValueChanged(CCCVars.TTSApiToken, v => _apiToken = v, true);
+        _httpClient.DefaultRequestHeaders.Add("Authorization", _apiToken);
     }
 
     /// <summary>
@@ -64,6 +66,7 @@ public sealed class TTSManager
     public async Task<byte[]?> ConvertTextToSpeech(string speaker, string text)
     {
         WantedCount.Inc();
+        text = Regex.Replace(text, "<[^>]+>", String.Empty);
         var cacheKey = GenerateCacheKey(speaker, text);
         if (_cache.TryGetValue(cacheKey, out var data))
         {
@@ -73,20 +76,20 @@ public sealed class TTSManager
         }
 
         _sawmill.Verbose($"Generate new audio for '{text}' speech by '{speaker}' speaker");
-
-        var body = new GenerateVoiceRequest
+        Dictionary<string, string> parameters = new()
         {
-            ApiToken = _apiToken,
-            Text = text,
-            Speaker = speaker,
+            {"text", text},
+            {"speaker", speaker},
+            {"ext", "ogg"}
         };
-
+        var queryString = await new FormUrlEncodedContent(parameters).ReadAsStringAsync();
+        var fullUrl = $"{_apiUrl}?{queryString}";
         var reqTime = DateTime.UtcNow;
         try
         {
             var timeout = _cfg.GetCVar(CCCVars.TTSApiTimeout);
             var cts = new CancellationTokenSource(TimeSpan.FromSeconds(timeout));
-            var response = await _httpClient.PostAsJsonAsync(_apiUrl, body, cts.Token);
+            var response = await _httpClient.GetAsync(fullUrl, cts.Token);
             if (!response.IsSuccessStatusCode)
             {
                 if (response.StatusCode == HttpStatusCode.TooManyRequests)
@@ -98,22 +101,7 @@ public sealed class TTSManager
                 _sawmill.Error($"TTS request returned bad status code: {response.StatusCode}");
                 return null;
             }
-
-            var json = await response.Content.ReadFromJsonAsync<GenerateVoiceResponse>(cancellationToken: cts.Token);
-            if (json.Results == null || json.Results.Count == 0)
-            {
-                _sawmill.Error($"TTS API returned empty results for '{text}'");
-                return null;
-            }
-
-            var firstResult = json.Results[0];
-            if (string.IsNullOrEmpty(firstResult.Audio))
-            {
-                _sawmill.Error($"TTS API returned empty audio data for '{text}'");
-                return null;
-            }
-
-            var soundData = Convert.FromBase64String(firstResult.Audio);
+            var soundData = await response.Content.ReadAsByteArrayAsync();
 
             _cache.Add(cacheKey, soundData);
             _cacheKeysSeq.Add(cacheKey);
@@ -163,32 +151,12 @@ public sealed class TTSManager
         public GenerateVoiceRequest()
         {
         }
-
-        [JsonPropertyName("api_token")]
-        public string ApiToken { get; set; } = "";
-
         [JsonPropertyName("text")]
         public string Text { get; set; } = "";
 
         [JsonPropertyName("speaker")]
         public string Speaker { get; set; } = "";
-
-        [JsonPropertyName("ssml")]
-        public bool SSML { get; private set; } = true;
-
-        [JsonPropertyName("word_ts")]
-        public bool WordTS { get; private set; } = false;
-
-        [JsonPropertyName("put_accent")]
-        public bool PutAccent { get; private set; } = true;
-
-        [JsonPropertyName("put_yo")]
-        public bool PutYo { get; private set; } = false;
-
-        [JsonPropertyName("sample_rate")]
-        public int SampleRate { get; private set; } = 24000;
-
-        [JsonPropertyName("format")]
+        [JsonPropertyName("ext")]
         public string Format { get; private set; } = "ogg";
     }
 
