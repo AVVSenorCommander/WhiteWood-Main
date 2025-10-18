@@ -25,6 +25,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using Content.Server.Preferences.Managers;
 
 namespace Content.Server.Administration.Systems
 {
@@ -652,24 +653,16 @@ namespace Content.Server.Administration.Systems
 
             var escapedText = FormattedMessage.EscapeText(message.Text);
 
+            var prefManager = IoCManager.Resolve<IServerPreferencesManager>();
+            var adminColor = prefManager.GetPreferences(senderSession.UserId).AdminOOCColor;
+            var adminMgr = IoCManager.Resolve<IAdminManager>();
+            var adminData = adminMgr.GetAdminData(senderSession)!;
+
             string bwoinkText;
-            string adminPrefix = "";
 
-            //Getting an administrator position
-            if (_config.GetCVar(CCVars.AhelpAdminPrefix) && senderAdmin is not null && senderAdmin.Title is not null)
+            if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
             {
-                adminPrefix = $"[bold]\\[{senderAdmin.Title}\\][/bold] ";
-            }
-
-            if (senderAdmin is not null &&
-                senderAdmin.Flags ==
-                AdminFlags.Adminhelp) // Mentor. Not full admin. That's why it's colored differently.
-            {
-                bwoinkText = $"[color=purple]{adminPrefix}{senderSession.Name}[/color]";
-            }
-            else if (senderAdmin is not null && senderAdmin.HasFlag(AdminFlags.Adminhelp))
-            {
-                bwoinkText = $"[color=red]{adminPrefix}{senderSession.Name}[/color]";
+                bwoinkText = $"[color={adminColor.ToHex()}][bold]\\[{adminData.Title}\\][/bold] | {senderSession.Name}[/color]";
             }
             else
             {
