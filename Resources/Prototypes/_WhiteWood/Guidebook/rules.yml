@@ -1,0 +1,234 @@
+- type: guideEntry
+  id: DefaultRuleset
+  name: Правила сервера
+  priority: 0
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRules.xml"
+  children:
+  - DefaultRule0
+  - DefaultRule1
+  - DefaultRule11
+  - DefaultRule12
+  - DefaultRule13  
+  - DefaultRule2
+  - DefaultRule21
+  - DefaultRule22
+  - DefaultRule23
+  - DefaultRule24  
+  - DefaultRule25      
+  - DefaultRule3
+  - DefaultRule31
+  - DefaultRule32
+  - DefaultRule33
+  - DefaultRule34
+  - DefaultRule4
+  - DefaultRule41
+  - DefaultRule42
+  - DefaultRule43
+  - DefaultRule5
+  - DefaultRule51
+  - DefaultRule52
+  - DefaultRule53
+  - DefaultRule6
+  - DefaultRule61
+  - DefaultRule62
+  - DefaultRule63      
+  - DefaultRule7
+
+- type: guideEntry
+  id: DefaultRule0
+  name: Правило 0
+  priority: 1
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule0.xml"
+
+- type: guideEntry
+  id: DefaultRule1
+  name: Правило 1
+  priority: 2
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule1.xml"
+
+- type: guideEntry
+  id: DefaultRule11
+  name: Правило 1.1
+  priority: 3
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule11.xml"
+
+- type: guideEntry
+  id: DefaultRule12
+  name: Правило 1.2
+  priority: 4
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule12.xml"
+
+- type: guideEntry
+  id: DefaultRule2
+  name: Правило 2
+  priority: 5
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule2.xml"
+
+- type: guideEntry
+  id: DefaultRule21
+  name: Правило 2.1
+  priority: 6
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule21.xml"
+
+- type: guideEntry
+  id: DefaultRule22
+  name: Правило 2.2
+  priority: 6
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule22.xml"
+
+- type: guideEntry
+  id: DefaultRule23
+  name: Правило 2.3
+  priority: 6
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule23.xml"
+
+- type: guideEntry
+  id: DefaultRule24
+  name: Правило 2.4
+  priority: 6
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule24.xml"  
+
+- type: guideEntry
+  id: DefaultRule25
+  name: Правило 2.5
+  priority: 6
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule25.xml"  
+
+- type: guideEntry
+  id: DefaultRule3
+  name: Правило 3
+  priority: 8
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule3.xml"
+
+- type: guideEntry
+  id: DefaultRule31
+  name: Правило 3.1
+  priority: 9
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule31.xml"
+
+- type: guideEntry
+  id: DefaultRule32
+  name: Правило 3.2
+  priority: 10
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule32.xml"
+
+- type: guideEntry
+  id: DefaultRule33
+  name: Правило 3.3
+  priority: 11
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule33.xml"
+
+- type: guideEntry
+  id: DefaultRule34
+  name: Правило 3.4
+  priority: 12
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule34.xml"
+
+
+- type: guideEntry
+  id: DefaultRule4
+  name: Правило 4
+  priority: 17
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule4.xml"
+
+- type: guideEntry
+  id: DefaultRule41
+  name: Правило 4.1
+  priority: 18
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule41.xml"
+
+- type: guideEntry
+  id: DefaultRule42
+  name: Правило 4.2
+  priority: 19
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule42.xml"
+
+- type: guideEntry
+  id: DefaultRule43
+  name: Правило 4.3
+  priority: 20
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule43.xml"
+
+
+- type: guideEntry
+  id: DefaultRule5
+  name: Правило 5
+  priority: 22
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule5.xml"
+
+- type: guideEntry
+  id: DefaultRule51
+  name: Правило 5.1
+  priority: 23
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule51.xml"
+
+- type: guideEntry
+  id: DefaultRule52
+  name: Правило 5.2
+  priority: 24
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule52.xml"
+
+- type: guideEntry
+  id: DefaultRule53
+  name: Правило 5.3
+  priority: 25
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule53.xml"
+
+- type: guideEntry
+  id: DefaultRule6
+  name: Правило 6
+  priority: 26
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule6.xml"
+
+- type: guideEntry
+  id: DefaultRule61
+  name: Правило 6.1
+  priority: 26
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule61.xml"
+
+- type: guideEntry
+  id: DefaultRule62
+  name: Правило 6.2
+  priority: 26
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule62.xml"
+
+- type: guideEntry
+  id: DefaultRule63
+  name: Правило 6.3
+  priority: 26
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule63.xml"
+
+- type: guideEntry
+  id: DefaultRule7
+  name: Правило 7
+  priority: 27
+  ruleEntry: true
+  text: "/ServerInfo/_WhiteWood/ServerRules/DefaultRule7.xml"
