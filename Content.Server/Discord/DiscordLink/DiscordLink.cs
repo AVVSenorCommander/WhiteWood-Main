@@ -1,9 +1,12 @@
 ﻿using System.Threading.Tasks;
+using Content.Server.GameTicking;
 using Content.Shared.CCVar;
 using NetCord;
 using NetCord.Gateway;
 using NetCord.Rest;
+using Robust.Server.Player;
 using Robust.Shared.Configuration;
+using Robust.Shared.Player;
 
 namespace Content.Server.Discord.DiscordLink;
 
@@ -35,6 +38,7 @@ public sealed class DiscordLink : IPostInjectInit
 {
     [Dependency] private readonly ILogManager _logManager = default!;
     [Dependency] private readonly IConfigurationManager _configuration = default!;
+    [Dependency] private readonly IPlayerManager _playerManager = default!;
 
     /// <summary>
     ///    The Discord client. This is null if the bot is not connected.
@@ -79,9 +83,9 @@ public sealed class DiscordLink : IPostInjectInit
 
     public void Initialize()
     {
+        _playerManager.PlayerStatusChanged += UpdatePlayerCount;
         _configuration.OnValueChanged(CCVars.DiscordGuildId, OnGuildIdChanged, true);
         _configuration.OnValueChanged(CCVars.DiscordPrefix, OnPrefixChanged, true);
-
         if (_configuration.GetCVar(CCVars.DiscordToken) is not { } token || token == string.Empty)
         {
             _sawmill.Info("No Discord token specified, not connecting.");
@@ -132,8 +136,21 @@ public sealed class DiscordLink : IPostInjectInit
                 _sawmill.Error("Failed to connect to Discord!", e);
             }
         });
+        InternalUpdatePlayerCount();
     }
 
+    public void UpdatePlayerCount(object? sender, SessionStatusEventArgs sessionStatusEventArgs )
+    {
+        InternalUpdatePlayerCount();
+    }
+
+    internal void InternalUpdatePlayerCount()
+    {
+        if (!IsConnected) return;
+        var activities = new List<UserActivityProperties>();
+        activities.Add(new UserActivityProperties($"{_playerManager.PlayerCount}/{_playerManager.MaxPlayers}", UserActivityType.Watching));
+        _client!.UpdatePresenceAsync(new PresenceProperties(UserStatusType.Online).WithActivities(activities));
+    }
     public async Task Shutdown()
     {
         if (_client != null)
@@ -208,7 +225,6 @@ public sealed class DiscordLink : IPostInjectInit
         OnMessageReceived?.Invoke(message);
         return ValueTask.CompletedTask;
     }
-
     #region Proxy methods
 
     /// <summary>
